@@ -23,6 +23,7 @@
 		DAF976231F739CC7004AF525 /* XmlStatusParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF976221F739CC7004AF525 /* XmlStatusParsing.swift */; };
 		DAF976251F739CE4004AF525 /* XmlStatusFinished.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF976241F739CE4004AF525 /* XmlStatusFinished.swift */; };
 		DAF976271F739D05004AF525 /* XmlStatusError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF976261F739D05004AF525 /* XmlStatusError.swift */; };
+		DAF976291F739DE1004AF525 /* XmlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF976281F739DE1004AF525 /* XmlFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		DAF976221F739CC7004AF525 /* XmlStatusParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlStatusParsing.swift; sourceTree = "<group>"; };
 		DAF976241F739CE4004AF525 /* XmlStatusFinished.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlStatusFinished.swift; sourceTree = "<group>"; };
 		DAF976261F739D05004AF525 /* XmlStatusError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlStatusError.swift; sourceTree = "<group>"; };
+		DAF976281F739DE1004AF525 /* XmlFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF9761A1F739A39004AF525 /* Xml.swift */,
+				DAF976281F739DE1004AF525 /* XmlFactory.swift */,
 				DAF9761E1F739BA2004AF525 /* XmlStatusProtocol.swift */,
 				DAF976201F739C02004AF525 /* XmlStatusStandby.swift */,
 				DAF976221F739CC7004AF525 /* XmlStatusParsing.swift */,
@@ -210,6 +213,7 @@
 				DAF9761F1F739BA2004AF525 /* XmlStatusProtocol.swift in Sources */,
 				DAF976231F739CC7004AF525 /* XmlStatusParsing.swift in Sources */,
 				DAF9760F1F7350BC004AF525 /* AppDelegate.swift in Sources */,
+				DAF976291F739DE1004AF525 /* XmlFactory.swift in Sources */,
 				DAF9761B1F739A39004AF525 /* Xml.swift in Sources */,
 				DAF976111F7350F5004AF525 /* Controller.swift in Sources */,
 				DAF976211F739C02004AF525 /* XmlStatusStandby.swift in Sources */,

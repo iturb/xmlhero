@@ -11,6 +11,7 @@
 		DA4AB0841F731C120097339F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB07E1F731C120097339F /* Info.plist */; };
 		DA4AB0851F731C120097339F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB07F1F731C120097339F /* README.md */; };
 		DA4AB0861F731C120097339F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB0801F731C120097339F /* LICENSE */; };
+		DAF9760A1F734EA3004AF525 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = DAF976091F734EA3004AF525 /* CHANGELOG.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DA4AB07E1F731C120097339F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA4AB07F1F731C120097339F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA4AB0801F731C120097339F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DAF976091F734EA3004AF525 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 				DA4AB0821F731C120097339F /* Source */,
 				DA4AB07E1F731C120097339F /* Info.plist */,
 				DA4AB0801F731C120097339F /* LICENSE */,
+				DAF976091F734EA3004AF525 /* CHANGELOG.md */,
 				DA4AB07F1F731C120097339F /* README.md */,
 				DA4AB07D1F731C120097339F /* XmlHero.podspec */,
 				DA4AB0691F731BEA0097339F /* Products */,
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA4AB0851F731C120097339F /* README.md in Resources */,
+				DAF9760A1F734EA3004AF525 /* CHANGELOG.md in Resources */,
 				DA4AB0841F731C120097339F /* Info.plist in Resources */,
 				DA4AB0861F731C120097339F /* LICENSE in Resources */,
 				DA4AB0831F731C120097339F /* XmlHero.podspec in Resources */,

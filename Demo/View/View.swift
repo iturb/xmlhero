@@ -3,9 +3,9 @@ import UIKit
 class View:UIView
 {
     private(set) weak var textView:UITextView!
-    private let kInsetsVertical:CGFloat = 10
-    private let kInsetsHorizontal:CGFloat = 20
-    private let kFontSize:CGFloat = 22
+    private let kInsetsVertical:CGFloat = 20
+    private let kInsetsHorizontal:CGFloat = 10
+    private let kFontSize:CGFloat = 20
     
     init()
     {
@@ -20,11 +20,11 @@ class View:UIView
         textView.textColor = UIColor.black
         textView.alwaysBounceVertical = true
         textView.alwaysBounceHorizontal = true
-        textView.contentInset = UIEdgeInsets(
+        textView.textContainerInset = UIEdgeInsets(
             top:kInsetsVertical,
             left:kInsetsHorizontal,
-            bottom:-kInsetsVertical,
-            right:-kInsetsHorizontal)
+            bottom:kInsetsVertical,
+            right:kInsetsHorizontal)
         textView.translatesAutoresizingMaskIntoConstraints = false
         self.textView = textView
         

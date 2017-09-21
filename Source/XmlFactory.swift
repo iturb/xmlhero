@@ -44,7 +44,8 @@ extension Xml
         
         else
         {
-            completion(nil, nil)
+            let error:XmlError = XmlError.fileNotFound()
+            completion(nil, error)
             
             return
         }

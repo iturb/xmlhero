@@ -56,13 +56,13 @@ class Controller:UIViewController
         guard
             
             let view:View = self.view as? View,
-            let string:String = content as? String
+            let customString:CustomStringConvertible = content as? CustomStringConvertible
             
         else
         {
             return
         }
         
-        view.textView.text = string
+        view.textView.text = customString.description
     }
 }

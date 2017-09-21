@@ -27,6 +27,28 @@ extension Xml
         return url
     }
     
+    private class func asyncObject(
+        fileName:String,
+        withExtension:String,
+        bundle:Bundle?,
+        completion:@escaping((Any?, XmlError?) -> ()))
+    {
+        guard
+            
+            let url:URL = url(
+                fileName:fileName,
+                withExtension:withExtension,
+                bundle:bundle)
+            
+        else
+        {
+            let error:XmlError = XmlError.fileNotFound()
+            completion(nil, error)
+            
+            return
+        }
+    }
+    
     //MARK: open
     
     open class func object(
@@ -35,19 +57,14 @@ extension Xml
         bundle:Bundle?,
         completion:@escaping((Any?, XmlError?) -> ()))
     {
-        guard
-        
-            let url:URL = url(
+        DispatchQueue.global(
+            qos:DispatchQoS.QoSClass.background).async
+        {
+            asyncObject(
                 fileName:fileName,
                 withExtension:withExtension,
-                bundle:bundle)
-        
-        else
-        {
-            let error:XmlError = XmlError.fileNotFound()
-            completion(nil, error)
-            
-            return
+                bundle:bundle,
+                completion:completion)
         }
     }
     

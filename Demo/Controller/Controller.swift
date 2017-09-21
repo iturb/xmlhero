@@ -2,7 +2,7 @@ import UIKit
 
 class Controller:UIViewController
 {
-    private let kFileName:String = "demos"
+    private let kFileName:String = "demo"
     private let kExtension:String = "xml"
     
     override func loadView()

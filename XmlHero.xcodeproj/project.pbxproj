@@ -11,7 +11,6 @@
 		DA2B32C51F73A584009386F0 /* XmlErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */; };
 		DA2B32C91F73A71B009386F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA2B32C71F73A71B009386F0 /* Localizable.strings */; };
 		DA2B32CB1F73AF7E009386F0 /* XmlStatusCanceled.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B32CA1F73AF7E009386F0 /* XmlStatusCanceled.swift */; };
-		DA392E471F7440A700E40C4D /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA392E461F7440A700E40C4D /* Tests.swift */; };
 		DA4AB0831F731C120097339F /* XmlHero.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB07D1F731C120097339F /* XmlHero.podspec */; };
 		DA4AB0851F731C120097339F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB07F1F731C120097339F /* README.md */; };
 		DA4AB0861F731C120097339F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB0801F731C120097339F /* LICENSE */; };
@@ -50,7 +49,6 @@
 		DA2B32C81F73A71B009386F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA2B32CA1F73AF7E009386F0 /* XmlStatusCanceled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlStatusCanceled.swift; sourceTree = "<group>"; };
 		DA392E441F7440A700E40C4D /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA392E461F7440A700E40C4D /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		DA392E481F7440A700E40C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA392E4E1F7440FE00E40C4D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA4AB0681F731BEA0097339F /* XmlHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XmlHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +103,6 @@
 		DA392E451F7440A700E40C4D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DA392E461F7440A700E40C4D /* Tests.swift */,
 				DA392E481F7440A700E40C4D /* Info.plist */,
 			);
 			path = Tests;
@@ -300,7 +297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA392E471F7440A700E40C4D /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

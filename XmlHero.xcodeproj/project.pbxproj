@@ -11,6 +11,7 @@
 		DA2B32C51F73A584009386F0 /* XmlErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */; };
 		DA2B32C91F73A71B009386F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA2B32C71F73A71B009386F0 /* Localizable.strings */; };
 		DA2B32CB1F73AF7E009386F0 /* XmlStatusCanceled.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B32CA1F73AF7E009386F0 /* XmlStatusCanceled.swift */; };
+		DA392E471F7440A700E40C4D /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA392E461F7440A700E40C4D /* Tests.swift */; };
 		DA4AB0831F731C120097339F /* XmlHero.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB07D1F731C120097339F /* XmlHero.podspec */; };
 		DA4AB0851F731C120097339F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB07F1F731C120097339F /* README.md */; };
 		DA4AB0861F731C120097339F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB0801F731C120097339F /* LICENSE */; };
@@ -33,11 +34,24 @@
 		DAF976291F739DE1004AF525 /* XmlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF976281F739DE1004AF525 /* XmlFactory.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DA392E491F7440A700E40C4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4AB0601F731BEA0097339F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4AB0671F731BEA0097339F;
+			remoteInfo = XmlHero;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		DA2B32C21F73A539009386F0 /* XmlError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlError.swift; sourceTree = "<group>"; };
 		DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlErrorFactory.swift; sourceTree = "<group>"; };
 		DA2B32C81F73A71B009386F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA2B32CA1F73AF7E009386F0 /* XmlStatusCanceled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlStatusCanceled.swift; sourceTree = "<group>"; };
+		DA392E441F7440A700E40C4D /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA392E461F7440A700E40C4D /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		DA392E481F7440A700E40C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA4AB0681F731BEA0097339F /* XmlHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XmlHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4AB07D1F731C120097339F /* XmlHero.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XmlHero.podspec; sourceTree = "<group>"; };
 		DA4AB07E1F731C120097339F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +77,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DA392E411F7440A700E40C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA4AB0651F731BEA0097339F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,6 +102,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		DA392E451F7440A700E40C4D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DA392E461F7440A700E40C4D /* Tests.swift */,
+				DA392E481F7440A700E40C4D /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		DA4AB05F1F731BEA0097339F = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +122,7 @@
 				DAF976091F734EA3004AF525 /* CHANGELOG.md */,
 				DA4AB07F1F731C120097339F /* README.md */,
 				DA4AB07D1F731C120097339F /* XmlHero.podspec */,
+				DA392E451F7440A700E40C4D /* Tests */,
 				DA4AB0691F731BEA0097339F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				DA4AB0681F731BEA0097339F /* XmlHero.app */,
+				DA392E441F7440A700E40C4D /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +196,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DA392E431F7440A700E40C4D /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA392E4D1F7440A700E40C4D /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				DA392E401F7440A700E40C4D /* Sources */,
+				DA392E411F7440A700E40C4D /* Frameworks */,
+				DA392E421F7440A700E40C4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA392E4A1F7440A700E40C4D /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = DA392E441F7440A700E40C4D /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DA4AB0671F731BEA0097339F /* XmlHero */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA4AB07A1F731BEA0097339F /* Build configuration list for PBXNativeTarget "XmlHero" */;
@@ -191,6 +241,11 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = iturbide;
 				TargetAttributes = {
+					DA392E431F7440A700E40C4D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DA4AB0671F731BEA0097339F;
+					};
 					DA4AB0671F731BEA0097339F = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
@@ -211,11 +266,19 @@
 			projectRoot = "";
 			targets = (
 				DA4AB0671F731BEA0097339F /* XmlHero */,
+				DA392E431F7440A700E40C4D /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DA392E421F7440A700E40C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA4AB0661F731BEA0097339F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,6 +296,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DA392E401F7440A700E40C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA392E471F7440A700E40C4D /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA4AB0641F731BEA0097339F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +330,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DA392E4A1F7440A700E40C4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4AB0671F731BEA0097339F /* XmlHero */;
+			targetProxy = DA392E491F7440A700E40C4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		DA2B32C71F73A71B009386F0 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -271,6 +350,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DA392E4B1F7440A700E40C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AMWG3RLHN;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iturbide.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XmlHero.app/XmlHero";
+			};
+			name = Debug;
+		};
+		DA392E4C1F7440A700E40C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AMWG3RLHN;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iturbide.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XmlHero.app/XmlHero";
+			};
+			name = Release;
+		};
 		DA4AB0781F731BEA0097339F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -420,6 +535,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DA392E4D1F7440A700E40C4D /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA392E4B1F7440A700E40C4D /* Debug */,
+				DA392E4C1F7440A700E40C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DA4AB0631F731BEA0097339F /* Build configuration list for PBXProject "XmlHero" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

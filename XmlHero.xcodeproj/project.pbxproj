@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA2B32C31F73A539009386F0 /* XmlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B32C21F73A539009386F0 /* XmlError.swift */; };
 		DA2B32C51F73A584009386F0 /* XmlErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */; };
+		DA2B32C91F73A71B009386F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA2B32C71F73A71B009386F0 /* Localizable.strings */; };
 		DA4AB0831F731C120097339F /* XmlHero.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB07D1F731C120097339F /* XmlHero.podspec */; };
 		DA4AB0851F731C120097339F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB07F1F731C120097339F /* README.md */; };
 		DA4AB0861F731C120097339F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB0801F731C120097339F /* LICENSE */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		DA2B32C21F73A539009386F0 /* XmlError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlError.swift; sourceTree = "<group>"; };
 		DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlErrorFactory.swift; sourceTree = "<group>"; };
+		DA2B32C81F73A71B009386F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA4AB0681F731BEA0097339F /* XmlHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XmlHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4AB07D1F731C120097339F /* XmlHero.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XmlHero.podspec; sourceTree = "<group>"; };
 		DA4AB07E1F731C120097339F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,11 +65,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA2B32C61F73A71B009386F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA2B32C71F73A71B009386F0 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DA4AB05F1F731BEA0097339F = {
 			isa = PBXGroup;
 			children = (
 				DA4AB0811F731C120097339F /* Demo */,
 				DA4AB0821F731C120097339F /* Source */,
+				DA2B32C61F73A71B009386F0 /* Resources */,
 				DA4AB07E1F731C120097339F /* Info.plist */,
 				DA4AB0801F731C120097339F /* LICENSE */,
 				DAF976091F734EA3004AF525 /* CHANGELOG.md */,
@@ -200,6 +211,7 @@
 				DAF976171F738C7E004AF525 /* demo.xml in Resources */,
 				DA4AB0851F731C120097339F /* README.md in Resources */,
 				DAF9760A1F734EA3004AF525 /* CHANGELOG.md in Resources */,
+				DA2B32C91F73A71B009386F0 /* Localizable.strings in Resources */,
 				DA4AB0861F731C120097339F /* LICENSE in Resources */,
 				DAF976131F7351CC004AF525 /* LaunchScreen.storyboard in Resources */,
 				DA4AB0831F731C120097339F /* XmlHero.podspec in Resources */,
@@ -230,6 +242,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA2B32C71F73A71B009386F0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA2B32C81F73A71B009386F0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DA4AB0781F731BEA0097339F /* Debug */ = {

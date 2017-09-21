@@ -8,21 +8,21 @@ extension Xml
         fileName:String,
         extension:String,
         bundle:Bundle?,
-        completion:@escaping((Xml?, Error?) -> ()))
+        completion:@escaping((Any?, Error?) -> ()))
     {
         
     }
     
     open class func object(
         url:URL,
-        completion:@escaping((Xml?, Error?) -> ()))
+        completion:@escaping((Any?, Error?) -> ()))
     {
         
     }
     
     open class func object(
         data:Data,
-        completion:@escaping((Xml?, Error?) -> ()))
+        completion:@escaping((Any?, Error?) -> ()))
     {
         
     }

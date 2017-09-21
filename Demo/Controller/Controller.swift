@@ -17,7 +17,7 @@ class Controller:UIViewController
         
         Xml.object(
             fileName:kFileName,
-            extension:kExtension,
+            withExtension:kExtension,
             bundle:nil)
         { [weak self] (xml:Any?, error:Error?) in
             
@@ -29,7 +29,8 @@ class Controller:UIViewController
             {
                 if let errorDescription:String = error?.localizedDescription
                 {
-                    self?.updateContent(content:errorDescription)
+                    self?.updateContent(
+                        content:errorDescription)
                 }
                 
                 return

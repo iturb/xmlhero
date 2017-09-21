@@ -50,7 +50,7 @@
 		DA2B32CA1F73AF7E009386F0 /* XmlStatusCanceled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlStatusCanceled.swift; sourceTree = "<group>"; };
 		DA392E441F7440A700E40C4D /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA392E481F7440A700E40C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA392E4E1F7440FE00E40C4D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA392E501F74424200E40C4D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA4AB0681F731BEA0097339F /* XmlHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XmlHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4AB07D1F731C120097339F /* XmlHero.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XmlHero.podspec; sourceTree = "<group>"; };
 		DA4AB07F1F731C120097339F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -135,6 +135,7 @@
 		DA4AB0811F731C120097339F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DA392E501F74424200E40C4D /* Info.plist */,
 				DAF9760D1F7350AE004AF525 /* Controller */,
 				DAF9760C1F7350AE004AF525 /* Resources */,
 				DAF9760B1F7350AE004AF525 /* View */,
@@ -145,7 +146,6 @@
 		DA4AB0821F731C120097339F /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				DA392E4E1F7440FE00E40C4D /* Info.plist */,
 				DAF9761A1F739A39004AF525 /* Xml.swift */,
 				DAF976281F739DE1004AF525 /* XmlFactory.swift */,
 				DAF9761E1F739BA2004AF525 /* XmlStatusProtocol.swift */,
@@ -502,7 +502,7 @@
 				CLANG_MODULES_AUTOLINK = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iturbide.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -519,7 +519,7 @@
 				CLANG_MODULES_AUTOLINK = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iturbide.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";

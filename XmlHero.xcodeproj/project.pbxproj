@@ -119,8 +119,8 @@
 		DA392E521F74426700E40C4D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DA392E541F7442AA00E40C4D /* TestElements.swift */,
 				DA392E581F74438400E40C4D /* TestLoading.swift */,
+				DA392E541F7442AA00E40C4D /* TestElements.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";

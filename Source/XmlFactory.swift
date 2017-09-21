@@ -47,6 +47,42 @@ extension Xml
             
             return
         }
+        
+        asyncObject(
+            url:url,
+            completion:completion)
+    }
+    
+    private class func asyncObject(
+        url:URL,
+        completion:@escaping((Any?, XmlError?) -> ()))
+    {
+        let data:Data
+        
+        do
+        {
+            try data = Data(
+                contentsOf:url,
+                options:Data.ReadingOptions.mappedIfSafe)
+        }
+        catch
+        {
+            let error:XmlError = XmlError.failedLoadingData()
+            completion(nil, error)
+            
+            return
+        }
+        
+        asyncObject(
+            data:data,
+            completion:completion)
+    }
+    
+    private class func asyncObject(
+        data:Data,
+        completion:@escaping((Any?, XmlError?) -> ()))
+    {
+        
     }
     
     //MARK: open
@@ -72,12 +108,25 @@ extension Xml
         url:URL,
         completion:@escaping((Any?, XmlError?) -> ()))
     {
+        DispatchQueue.global(
+            qos:DispatchQoS.QoSClass.background).async
+        {
+            asyncObject(
+                url:url,
+                completion:completion)
+        }
     }
     
     open class func object(
         data:Data,
         completion:@escaping((Any?, XmlError?) -> ()))
     {
-        
+        DispatchQueue.global(
+            qos:DispatchQoS.QoSClass.background).async
+        {
+            asyncObject(
+                data:data,
+                completion:completion)
+        }
     }
 }

@@ -4,6 +4,16 @@ extension XmlError
 {
     //MARK: private
     
+    private static func errorWithKey(key:String) -> XmlError
+    {
+        let description:String = stringForKey(
+            key:key)
+        let error:XmlError = XmlError(
+            localizedDescription:description)
+        
+        return error
+    }
+    
     private static func stringForKey(key:String) -> String
     {
         let bundle:Bundle = Bundle(for:Xml.self)
@@ -21,10 +31,16 @@ extension XmlError
     
     static func fileNotFound() -> XmlError
     {
-        let description:String = stringForKey(
+        let error:XmlError = errorWithKey(
             key:"XmlError_fileNotFound")
-        let error:XmlError = XmlError(
-            localizedDescription:description)
+        
+        return error
+    }
+    
+    static func failedLoadingData() -> XmlError
+    {
+        let error:XmlError = errorWithKey(
+            key:"XmlError_failedLoadingData")
         
         return error
     }

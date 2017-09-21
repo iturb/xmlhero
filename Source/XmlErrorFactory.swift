@@ -52,4 +52,12 @@ extension XmlError
         
         return error
     }
+    
+    static func failedSerializing() -> XmlError
+    {
+        let error:XmlError = errorWithKey(
+            key:"XmlError_failedSerializing")
+        
+        return error
+    }
 }

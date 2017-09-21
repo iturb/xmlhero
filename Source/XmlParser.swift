@@ -36,4 +36,9 @@ final class XmlParser:
         parser.delegate = nil
         xml?.parsingError(error:error)
     }
+    
+    func parsingFinished(object:Any)
+    {
+        xml?.parsingFinished(xml:object)
+    }
 }

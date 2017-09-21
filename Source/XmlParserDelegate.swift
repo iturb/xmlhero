@@ -13,7 +13,19 @@ extension XmlParser
     func parserDidEndDocument(
         _ parser:XMLParser)
     {
+        guard
         
+            let serialized:Any = serialize(elements:root)
+        
+        else
+        {
+            let error:XmlError = XmlError.failedSerializing()
+            parsingError(error:error)
+            
+            return
+        }
+        
+        parsingFinished(object:serialized)
     }
     
     func parser(

@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
     s.platform         = :ios, '9.0'
     s.source           = { :git => 'https://github.com/iturb/xmlhero.git', :tag => "v#{s.version}" }
     s.source_files     = 'gifhero/Source/**/*.swift'
+    s.resources        = 'gifhero/Resources/**/*'
 end

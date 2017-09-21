@@ -31,7 +31,20 @@ extension XmlParser
         qualifiedName qName:String?,
         attributes attributeDict:[String:String] = [:])
     {
+        let element:XmlElement = XmlElement(
+            name:elementName,
+            parent:current)
         
+        if let current:XmlElement = self.current
+        {
+            current.addChild(child:element)
+        }
+        else
+        {
+            root.append(element)
+        }
+        
+        current = element
     }
     
     func parser(
@@ -40,13 +53,13 @@ extension XmlParser
         namespaceURI:String?,
         qualifiedName qName:String?)
     {
-        
+        current = current?.parent
     }
     
     func parser(
         _ parser:XMLParser,
         foundCharacters string:String)
     {
-        
+        current?.append(string:string)
     }
 }

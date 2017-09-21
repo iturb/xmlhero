@@ -16,6 +16,7 @@
 		DA4AB0861F731C120097339F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB0801F731C120097339F /* LICENSE */; };
 		DA7840411F73BBA000769F66 /* XmlParserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840401F73BBA000769F66 /* XmlParserDelegate.swift */; };
 		DA7840431F73BE2F00769F66 /* XmlElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840421F73BE2F00769F66 /* XmlElement.swift */; };
+		DA7840451F73CAC100769F66 /* XmlParserSerialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */; };
 		DAF9760A1F734EA3004AF525 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = DAF976091F734EA3004AF525 /* CHANGELOG.md */; };
 		DAF9760F1F7350BC004AF525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9760E1F7350BC004AF525 /* AppDelegate.swift */; };
 		DAF976111F7350F5004AF525 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF976101F7350F5004AF525 /* Controller.swift */; };
@@ -44,6 +45,7 @@
 		DA4AB0801F731C120097339F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DA7840401F73BBA000769F66 /* XmlParserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserDelegate.swift; sourceTree = "<group>"; };
 		DA7840421F73BE2F00769F66 /* XmlElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlElement.swift; sourceTree = "<group>"; };
+		DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserSerialize.swift; sourceTree = "<group>"; };
 		DAF976091F734EA3004AF525 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		DAF9760E1F7350BC004AF525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAF976101F7350F5004AF525 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				DA2B32CA1F73AF7E009386F0 /* XmlStatusCanceled.swift */,
 				DAF9761C1F739A7B004AF525 /* XmlParser.swift */,
 				DA7840401F73BBA000769F66 /* XmlParserDelegate.swift */,
+				DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */,
 				DA2B32C21F73A539009386F0 /* XmlError.swift */,
 				DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */,
 				DA7840421F73BE2F00769F66 /* XmlElement.swift */,
@@ -248,6 +251,7 @@
 				DAF9761B1F739A39004AF525 /* Xml.swift in Sources */,
 				DA2B32C51F73A584009386F0 /* XmlErrorFactory.swift in Sources */,
 				DAF976111F7350F5004AF525 /* Controller.swift in Sources */,
+				DA7840451F73CAC100769F66 /* XmlParserSerialize.swift in Sources */,
 				DAF976211F739C02004AF525 /* XmlStatusStandby.swift in Sources */,
 				DAF976151F738AED004AF525 /* View.swift in Sources */,
 			);

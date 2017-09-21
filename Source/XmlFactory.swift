@@ -87,7 +87,9 @@ extension Xml
         data:Data,
         completion:@escaping((Any?, XmlError?) -> ()))
     {
-        
+        xml.parse(
+            data:data,
+            completion:completion)
     }
     
     //MARK: open

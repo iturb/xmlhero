@@ -16,6 +16,7 @@
 		DAF976131F7351CC004AF525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF976121F7351CC004AF525 /* LaunchScreen.storyboard */; };
 		DAF976151F738AED004AF525 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF976141F738AED004AF525 /* View.swift */; };
 		DAF976171F738C7E004AF525 /* demo.xml in Resources */ = {isa = PBXBuildFile; fileRef = DAF976161F738C7E004AF525 /* demo.xml */; };
+		DAF9761B1F739A39004AF525 /* Xml.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9761A1F739A39004AF525 /* Xml.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DAF976121F7351CC004AF525 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAF976141F738AED004AF525 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		DAF976161F738C7E004AF525 /* demo.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = demo.xml; sourceTree = "<group>"; };
+		DAF9761A1F739A39004AF525 /* Xml.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xml.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		DA4AB0821F731C120097339F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				DAF9761A1F739A39004AF525 /* Xml.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAF9760F1F7350BC004AF525 /* AppDelegate.swift in Sources */,
+				DAF9761B1F739A39004AF525 /* Xml.swift in Sources */,
 				DAF976111F7350F5004AF525 /* Controller.swift in Sources */,
 				DAF976151F738AED004AF525 /* View.swift in Sources */,
 			);

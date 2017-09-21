@@ -6,6 +6,8 @@ final class TestElements:XCTestCase
     private var xml:Any?
     private let kResourceName:String = "mockElements"
     private let kResourceExtension:String = "xml"
+    private let kKeyColours:String = "colours"
+    private let kKeyRgb:String = "rgb"
     
     override func setUp()
     {
@@ -21,5 +23,28 @@ final class TestElements:XCTestCase
             
             self.xml = xml
         }
+    }
+    
+    //MARK: tests
+    
+    func testElementsTree()
+    {
+        let dictionary:[String:Any]? = xml as? [String:Any]
+        
+        XCTAssertNotNil(
+            dictionary,
+            "failed parsing dictionary")
+        
+        let colours:[String:Any]? = dictionary?[kKeyColours] as? [String:Any]
+        
+        XCTAssertNotNil(
+            colours,
+            "failed parsing element")
+        
+        let rgb:[String:Any]? = colours?[kKeyRgb] as? [String:Any]
+        
+        XCTAssertNotNil(
+            rgb,
+            "failed parsing element")
     }
 }

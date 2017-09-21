@@ -9,7 +9,7 @@ final class TestLoading:XCTestCase
     
     //MARK: tests
     
-    private func testLoadFile()
+    func testLoadFile()
     {
         let loadExpectation:XCTestExpectation = expectation(
             description:"load xml")

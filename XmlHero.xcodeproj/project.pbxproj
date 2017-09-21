@@ -15,6 +15,7 @@
 		DAF976111F7350F5004AF525 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF976101F7350F5004AF525 /* Controller.swift */; };
 		DAF976131F7351CC004AF525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF976121F7351CC004AF525 /* LaunchScreen.storyboard */; };
 		DAF976151F738AED004AF525 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF976141F738AED004AF525 /* View.swift */; };
+		DAF976171F738C7E004AF525 /* demo.xml in Resources */ = {isa = PBXBuildFile; fileRef = DAF976161F738C7E004AF525 /* demo.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DAF976101F7350F5004AF525 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		DAF976121F7351CC004AF525 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAF976141F738AED004AF525 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		DAF976161F738C7E004AF525 /* demo.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = demo.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF976121F7351CC004AF525 /* LaunchScreen.storyboard */,
+				DAF976161F738C7E004AF525 /* demo.xml */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF976171F738C7E004AF525 /* demo.xml in Resources */,
 				DA4AB0851F731C120097339F /* README.md in Resources */,
 				DAF9760A1F734EA3004AF525 /* CHANGELOG.md in Resources */,
 				DA4AB0861F731C120097339F /* LICENSE in Resources */,

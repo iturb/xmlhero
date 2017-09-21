@@ -31,7 +31,7 @@ import XmlHero
 ```
 Parse a XML file
 ```
-// if your file is myFile.xml 
+// if your file is myFile.xml
 
 Xml.object(
     fileName:"myFile",

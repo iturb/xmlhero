@@ -19,7 +19,7 @@ class Controller:UIViewController
             fileName:kFileName,
             withExtension:kExtension,
             bundle:nil)
-        { [weak self] (xml:Any?, error:Error?) in
+        { [weak self] (xml:Any?, error:XmlError?) in
             
             guard
             

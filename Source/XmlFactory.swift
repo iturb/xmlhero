@@ -33,7 +33,7 @@ extension Xml
         fileName:String,
         withExtension:String,
         bundle:Bundle?,
-        completion:@escaping((Any?, Error?) -> ()))
+        completion:@escaping((Any?, XmlError?) -> ()))
     {
         guard
         
@@ -53,13 +53,13 @@ extension Xml
     
     open class func object(
         url:URL,
-        completion:@escaping((Any?, Error?) -> ()))
+        completion:@escaping((Any?, XmlError?) -> ()))
     {
     }
     
     open class func object(
         data:Data,
-        completion:@escaping((Any?, Error?) -> ()))
+        completion:@escaping((Any?, XmlError?) -> ()))
     {
         
     }

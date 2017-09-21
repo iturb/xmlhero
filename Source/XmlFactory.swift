@@ -28,6 +28,7 @@ extension Xml
     }
     
     private class func asyncObject(
+        xml:Xml,
         fileName:String,
         withExtension:String,
         bundle:Bundle?,
@@ -49,11 +50,13 @@ extension Xml
         }
         
         asyncObject(
+            xml:xml,
             url:url,
             completion:completion)
     }
     
     private class func asyncObject(
+        xml:Xml,
         url:URL,
         completion:@escaping((Any?, XmlError?) -> ()))
     {
@@ -74,11 +77,13 @@ extension Xml
         }
         
         asyncObject(
+            xml:xml,
             data:data,
             completion:completion)
     }
     
     private class func asyncObject(
+        xml:Xml,
         data:Data,
         completion:@escaping((Any?, XmlError?) -> ()))
     {
@@ -87,46 +92,61 @@ extension Xml
     
     //MARK: open
     
-    open class func object(
+    @discardableResult open class func object(
         fileName:String,
         withExtension:String,
         bundle:Bundle?,
-        completion:@escaping((Any?, XmlError?) -> ()))
+        completion:@escaping((Any?, XmlError?) -> ())) -> Xml
     {
+        let xml:Xml = Xml()
+        
         DispatchQueue.global(
             qos:DispatchQoS.QoSClass.background).async
         {
             asyncObject(
+                xml:xml,
                 fileName:fileName,
                 withExtension:withExtension,
                 bundle:bundle,
                 completion:completion)
         }
+        
+        return xml
     }
     
-    open class func object(
+    @discardableResult open class func object(
         url:URL,
-        completion:@escaping((Any?, XmlError?) -> ()))
+        completion:@escaping((Any?, XmlError?) -> ())) -> Xml
     {
+        let xml:Xml = Xml()
+        
         DispatchQueue.global(
             qos:DispatchQoS.QoSClass.background).async
         {
             asyncObject(
+                xml:xml,
                 url:url,
                 completion:completion)
         }
+        
+        return xml
     }
     
-    open class func object(
+    @discardableResult open class func object(
         data:Data,
-        completion:@escaping((Any?, XmlError?) -> ()))
+        completion:@escaping((Any?, XmlError?) -> ())) -> Xml
     {
+        let xml:Xml = Xml()
+        
         DispatchQueue.global(
             qos:DispatchQoS.QoSClass.background).async
         {
             asyncObject(
+                xml:xml,
                 data:data,
                 completion:completion)
         }
+        
+        return xml
     }
 }

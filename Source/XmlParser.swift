@@ -4,6 +4,7 @@ final class XmlParser:
     NSObject,
     XMLParserDelegate
 {
+    var stack:[Any]
     private weak var xml:Xml?
     private let parser:XMLParser
     
@@ -13,6 +14,7 @@ final class XmlParser:
     {
         self.xml = xml
         parser = XMLParser(data:data)
+        stack = []
         
         super.init()
         

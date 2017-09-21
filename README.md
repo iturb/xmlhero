@@ -31,8 +31,10 @@ import XmlHero
 ```
 Parse a XML file
 ```
+// if your file is myFile.xml 
+
 Xml.object(
-    fileName:"myXml",
+    fileName:"myFile",
     withExtension:"xml",
     bundle:nil)
 { (xml:Any?, error:XmlError?) in

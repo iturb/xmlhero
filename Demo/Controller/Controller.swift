@@ -2,6 +2,9 @@ import UIKit
 
 class Controller:UIViewController
 {
+    private let kFileName:String = "demo"
+    private let kExtension:String = "xml"
+    
     override func loadView()
     {
         let view:View = View()
@@ -12,15 +15,53 @@ class Controller:UIViewController
     {
         super.viewDidLoad()
         
+        Xml.object(
+            fileName:kFileName,
+            extension:kExtension,
+            bundle:nil)
+        { [weak self] (xml:Any?, error:Error?) in
+            
+            guard
+            
+                let xml:Any = xml
+            
+            else
+            {
+                if let errorDescription:String = error?.localizedDescription
+                {
+                    self?.updateContent(content:errorDescription)
+                }
+                
+                return
+            }
+            
+            self?.updateContent(content:xml)
+        }
+    }
+    
+    //MARK: private
+    
+    private func updateContent(content:Any)
+    {
+        DispatchQueue.main.async
+        { [weak self] in
+            
+            self?.asyncUpdateContent(content:content)
+        }
+    }
+    
+    private func asyncUpdateContent(content:Any)
+    {
         guard
-        
-            let view:View = self.view as? View
-        
+            
+            let view:View = self.view as? View,
+            let string:String = content as? String
+            
         else
         {
             return
         }
         
-        view.textView.text = "hello world"
+        view.textView.text = string
     }
 }

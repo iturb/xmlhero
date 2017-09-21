@@ -11,6 +11,7 @@
 		DA2B32C51F73A584009386F0 /* XmlErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */; };
 		DA2B32C91F73A71B009386F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA2B32C71F73A71B009386F0 /* Localizable.strings */; };
 		DA2B32CB1F73AF7E009386F0 /* XmlStatusCanceled.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B32CA1F73AF7E009386F0 /* XmlStatusCanceled.swift */; };
+		DA392E551F7442AA00E40C4D /* TestElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA392E541F7442AA00E40C4D /* TestElements.swift */; };
 		DA4AB0831F731C120097339F /* XmlHero.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB07D1F731C120097339F /* XmlHero.podspec */; };
 		DA4AB0851F731C120097339F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB07F1F731C120097339F /* README.md */; };
 		DA4AB0861F731C120097339F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB0801F731C120097339F /* LICENSE */; };
@@ -51,6 +52,7 @@
 		DA392E441F7440A700E40C4D /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA392E481F7440A700E40C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA392E501F74424200E40C4D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA392E541F7442AA00E40C4D /* TestElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestElements.swift; sourceTree = "<group>"; };
 		DA4AB0681F731BEA0097339F /* XmlHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XmlHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4AB07D1F731C120097339F /* XmlHero.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XmlHero.podspec; sourceTree = "<group>"; };
 		DA4AB07F1F731C120097339F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -103,9 +105,26 @@
 		DA392E451F7440A700E40C4D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				DA392E531F74426700E40C4D /* Mocks */,
+				DA392E521F74426700E40C4D /* Tests */,
 				DA392E481F7440A700E40C4D /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		DA392E521F74426700E40C4D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DA392E541F7442AA00E40C4D /* TestElements.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		DA392E531F74426700E40C4D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		DA4AB05F1F731BEA0097339F = {
@@ -240,6 +259,7 @@
 				TargetAttributes = {
 					DA392E431F7440A700E40C4D = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DA4AB0671F731BEA0097339F;
 					};
@@ -297,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA392E551F7442AA00E40C4D /* TestElements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -358,6 +379,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XmlHero.app/XmlHero";
@@ -368,7 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				INFOPLIST_FILE = Tests/Info.plist;

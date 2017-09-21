@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<main>
-    <parent>
-        <a>
-            Red
-        </a>
-        <b />
-        <c>
-            Blue
-        </c>
-    </parent>
-</main>
+<colours>
+    <rgb>
+        <red>#FF0000</red>
+        <green />
+        <blue>#0000FF</blue>
+    </rgb>
+</colours>

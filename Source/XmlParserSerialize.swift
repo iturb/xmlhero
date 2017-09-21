@@ -34,7 +34,7 @@ extension XmlParser
         var dictionary:[String:Any] = [:]
         
         for element:XmlElement in elements
-        {
+        {   
             guard
                 
                 let serialized:Any = serialize(xml:element)
@@ -60,10 +60,7 @@ extension XmlParser
         }
         else if let value:String = xml.value
         {
-            let dictionary:[String:String] = [
-                xml.name:value]
-            
-            return dictionary
+            return value
         }
         
         return nil
@@ -75,47 +72,29 @@ extension XmlParser
     {
         guard
             
-            let first:XmlElement = elements.first
+            let first:XmlElement = elements.first,
+            let last:XmlElement = elements.last
             
         else
         {
             return nil
         }
         
+        let serialized:Any
         let count:Int = elements.count
         
-        if count > 1
+        if count > 1 && first.name == last.name
         {
-            guard
-                
-                let last:XmlElement = elements.last
-                
-            else
-            {
-                return nil
-            }
-            
-            if first.name == last.name
-            {
-                let serialized:Any = serializeArray(
-                    name:first.name,
-                    elements:elements)
-                
-                return serialized
-            }
-            else
-            {
-                let serialized:Any = serializeDictionary(
-                    elements:elements)
-                
-                return serialized
-            }
+            serialized = serializeArray(
+                name:first.name,
+                elements:elements)
         }
         else
         {
-            let serialized:Any? = serialize(xml:first)
-            
-            return serialized
+            serialized = serializeDictionary(
+                elements:elements)
         }
+        
+        return serialized
     }
 }

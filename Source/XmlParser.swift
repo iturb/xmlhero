@@ -4,7 +4,8 @@ final class XmlParser:
     NSObject,
     XMLParserDelegate
 {
-    var stack:[Any]
+    var root:[XmlElement]
+    weak var current:XmlElement?
     private weak var xml:Xml?
     private let parser:XMLParser
     
@@ -14,7 +15,7 @@ final class XmlParser:
     {
         self.xml = xml
         parser = XMLParser(data:data)
-        stack = []
+        root = []
         
         super.init()
         
@@ -28,5 +29,11 @@ final class XmlParser:
     {
         parser.delegate = nil
         parser.abortParsing()
+    }
+    
+    func parsingError(error:XmlError)
+    {
+        parser.delegate = nil
+        xml?.parsingError(error:error)
     }
 }

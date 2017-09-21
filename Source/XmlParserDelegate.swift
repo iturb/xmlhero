@@ -20,7 +20,8 @@ extension XmlParser
         _ parser:XMLParser,
         parseErrorOccurred parseError:Error)
     {
-        
+        let error:XmlError = XmlError.failedParsing()
+        parsingError(error:error)
     }
     
     func parser(
@@ -38,6 +39,13 @@ extension XmlParser
         didEndElement elementName:String,
         namespaceURI:String?,
         qualifiedName qName:String?)
+    {
+        
+    }
+    
+    func parser(
+        _ parser:XMLParser,
+        foundCharacters string:String)
     {
         
     }

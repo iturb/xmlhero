@@ -44,4 +44,12 @@ extension XmlError
         
         return error
     }
+    
+    static func failedParsing() -> XmlError
+    {
+        let error:XmlError = errorWithKey(
+            key:"XmlError_failedParsing")
+        
+        return error
+    }
 }

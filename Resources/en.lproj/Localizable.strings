@@ -1,2 +1,3 @@
 "XmlError_fileNotFound"="File not found";
 "XmlError_failedLoadingData"="Failed loading data file";
+"XmlError_failedParsing"="Failed parsing file";

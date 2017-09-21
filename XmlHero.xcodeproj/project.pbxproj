@@ -15,6 +15,7 @@
 		DA4AB0851F731C120097339F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB07F1F731C120097339F /* README.md */; };
 		DA4AB0861F731C120097339F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB0801F731C120097339F /* LICENSE */; };
 		DA7840411F73BBA000769F66 /* XmlParserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840401F73BBA000769F66 /* XmlParserDelegate.swift */; };
+		DA7840431F73BE2F00769F66 /* XmlElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840421F73BE2F00769F66 /* XmlElement.swift */; };
 		DAF9760A1F734EA3004AF525 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = DAF976091F734EA3004AF525 /* CHANGELOG.md */; };
 		DAF9760F1F7350BC004AF525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9760E1F7350BC004AF525 /* AppDelegate.swift */; };
 		DAF976111F7350F5004AF525 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF976101F7350F5004AF525 /* Controller.swift */; };
@@ -42,6 +43,7 @@
 		DA4AB07F1F731C120097339F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA4AB0801F731C120097339F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DA7840401F73BBA000769F66 /* XmlParserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserDelegate.swift; sourceTree = "<group>"; };
+		DA7840421F73BE2F00769F66 /* XmlElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlElement.swift; sourceTree = "<group>"; };
 		DAF976091F734EA3004AF525 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		DAF9760E1F7350BC004AF525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAF976101F7350F5004AF525 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				DA7840401F73BBA000769F66 /* XmlParserDelegate.swift */,
 				DA2B32C21F73A539009386F0 /* XmlError.swift */,
 				DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */,
+				DA7840421F73BE2F00769F66 /* XmlElement.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				DAF976251F739CE4004AF525 /* XmlStatusFinished.swift in Sources */,
 				DAF9761D1F739A7B004AF525 /* XmlParser.swift in Sources */,
 				DAF976271F739D05004AF525 /* XmlStatusError.swift in Sources */,
+				DA7840431F73BE2F00769F66 /* XmlElement.swift in Sources */,
 				DAF9761F1F739BA2004AF525 /* XmlStatusProtocol.swift in Sources */,
 				DAF976231F739CC7004AF525 /* XmlStatusParsing.swift in Sources */,
 				DAF9760F1F7350BC004AF525 /* AppDelegate.swift in Sources */,

@@ -12,6 +12,7 @@
 		DA4AB0861F731C120097339F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA4AB0801F731C120097339F /* LICENSE */; };
 		DAF9760A1F734EA3004AF525 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = DAF976091F734EA3004AF525 /* CHANGELOG.md */; };
 		DAF9760F1F7350BC004AF525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9760E1F7350BC004AF525 /* AppDelegate.swift */; };
+		DAF976111F7350F5004AF525 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF976101F7350F5004AF525 /* Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DA4AB0801F731C120097339F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DAF976091F734EA3004AF525 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		DAF9760E1F7350BC004AF525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAF976101F7350F5004AF525 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				DAF9760E1F7350BC004AF525 /* AppDelegate.swift */,
+				DAF976101F7350F5004AF525 /* Controller.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAF9760F1F7350BC004AF525 /* AppDelegate.swift in Sources */,
+				DAF976111F7350F5004AF525 /* Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

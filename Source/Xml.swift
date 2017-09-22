@@ -58,6 +58,24 @@ public final class Xml
         completionParsing = nil
     }
     
+    func buildingError(error:XmlError)
+    {
+        status = XmlStatus.error
+        
+        completionBuilding?(nil, error)
+        builder = nil
+        completionBuilding = nil
+    }
+    
+    func buildingFinished(data:Data)
+    {
+        status = XmlStatus.finished
+        
+        completionBuilding?(data, nil)
+        builder = nil
+        completionBuilding = nil
+    }
+    
     //MARK: public
     
     public func cancel()

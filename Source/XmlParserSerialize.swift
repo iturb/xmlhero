@@ -2,6 +2,8 @@ import Foundation
 
 extension XmlParser
 {
+    private static let kTextKey:String = "text"
+    
     //MARK: private
     
     private func serializeArray(
@@ -42,12 +44,13 @@ extension XmlParser
             
             return serialized
         }
-        else if let value:String = xml.value
-        {
-            return value
-        }
         
-        let dictionary:[String:Any] = [:]
+        var dictionary:[String:Any] = [:]
+        
+        if let value:String = xml.value
+        {
+            dictionary[XmlParser.kTextKey] = value
+        }
         
         return dictionary
     }

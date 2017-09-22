@@ -22,6 +22,7 @@ Run update
 
 ##### Enhancements
 
+- Add building XML from an object
 - Clean stream from BOM (Byte Order Mark)
    characters to prevent parsing errors
 - Add support for attributes

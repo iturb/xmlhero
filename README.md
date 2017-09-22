@@ -22,9 +22,9 @@ If you are wondering what is CocoaPods take a look at: [https://cocoapods.org](h
 
 # Usage
 ### Xml
-Xml is the class you need to use for XML loading
+Xml is the class you need to use for XML parsing
 
-### Add GifHero
+### Add XmlHero
 Once the Pod is installed import it in your project
 ```
 import XmlHero

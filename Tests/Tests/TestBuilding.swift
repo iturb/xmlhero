@@ -35,22 +35,12 @@ final class TestBuilding:XCTestCase
                 
                 guard
                     
-                    let data:Data = data
-                
-                else
-                {
-                    return
-                }
-                
-                let dataString:String
-                
-                do
-                {
-                    try dataString = String(
+                    let data:Data = data,
+                    let dataString:String = String(
                         data:data,
                         encoding:String.Encoding.utf8)
-                }
-                catch
+                
+                else
                 {
                     return
                 }

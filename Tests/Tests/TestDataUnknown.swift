@@ -3,36 +3,41 @@ import XCTest
 
 final class TestDataUnknown:XCTestCase
 {
-    private var xml:[String:Any]?
-    private var error:XmlError?
     private let kResourceName:String = "data.unknown"
+    private let kWaitExpectation:TimeInterval = 2
     
-    override func setUp()
+    //MARK: tests
+    
+    func testLoadingData()
     {
-        super.setUp()
+        let loadExpectation:XCTestExpectation = expectation(
+            description:"load xml")
         
         let bundle:Bundle = Bundle(for:TestDataUnknown.self)
+        var loadedXml:[String:Any]?
+        var loadingError:XmlError?
         
         Xml.object(
             fileName:kResourceName,
             bundle:bundle)
         { (xml:[String:Any]?, error:XmlError?) in
             
-            self.xml = xml
-            self.error = error
+            loadedXml = xml
+            loadingError = error
+            
+            loadExpectation.fulfill()
         }
-    }
-    
-    //MARK: tests
-    
-    func testLoadingData()
-    {
-        XCTAssertNil(
-            error,
-            "error should be nil")
         
-        XCTAssertNotNil(
-            xml,
-            "failed loading xml")
+        waitForExpectations(timeout:kWaitExpectation)
+        { (error:Error?) in
+            
+            XCTAssertNotNil(
+                loadedXml,
+                "failed loading xml")
+            
+            XCTAssertNil(
+                loadingError,
+                "found error while loading")
+        }
     }
 }

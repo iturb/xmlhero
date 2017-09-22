@@ -32,7 +32,7 @@ extension Xml
         fileName:String,
         withExtension:String,
         bundle:Bundle?,
-        completion:@escaping((Any?, XmlError?) -> ()))
+        completion:@escaping(([String:Any]?, XmlError?) -> ()))
     {
         guard
             
@@ -58,7 +58,7 @@ extension Xml
     private class func asyncObject(
         xml:Xml,
         url:URL,
-        completion:@escaping((Any?, XmlError?) -> ()))
+        completion:@escaping(([String:Any]?, XmlError?) -> ()))
     {
         let data:Data
         
@@ -85,7 +85,7 @@ extension Xml
     private class func asyncObject(
         xml:Xml,
         data:Data,
-        completion:@escaping((Any?, XmlError?) -> ()))
+        completion:@escaping(([String:Any]?, XmlError?) -> ()))
     {
         let dataCleaned:Data = cleanData(data:data)
         
@@ -100,7 +100,7 @@ extension Xml
         fileName:String,
         withExtension:String,
         bundle:Bundle?,
-        completion:@escaping((Any?, XmlError?) -> ())) -> Xml
+        completion:@escaping(([String:Any]?, XmlError?) -> ())) -> Xml
     {
         let xml:Xml = Xml()
         
@@ -120,7 +120,7 @@ extension Xml
     
     @discardableResult open class func object(
         url:URL,
-        completion:@escaping((Any?, XmlError?) -> ())) -> Xml
+        completion:@escaping(([String:Any]?, XmlError?) -> ())) -> Xml
     {
         let xml:Xml = Xml()
         
@@ -138,7 +138,7 @@ extension Xml
     
     @discardableResult open class func object(
         data:Data,
-        completion:@escaping((Any?, XmlError?) -> ())) -> Xml
+        completion:@escaping(([String:Any]?, XmlError?) -> ())) -> Xml
     {
         let xml:Xml = Xml()
         

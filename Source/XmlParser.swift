@@ -37,8 +37,8 @@ final class XmlParser:
         xml?.parsingError(error:error)
     }
     
-    func parsingFinished(object:Any)
+    func parsingFinished(xml:[String:Any])
     {
-        xml?.parsingFinished(xml:object)
+        self.xml?.parsingFinished(xml:xml)
     }
 }

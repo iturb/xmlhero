@@ -7,8 +7,8 @@ extension XmlParser
     func parserDidEndDocument(
         _ parser:XMLParser)
     {        
-        let serialized:Any = serialize(elements:root)
-        parsingFinished(object:serialized)
+        let serialized:[String:Any] = serialize(elements:root)
+        parsingFinished(xml:serialized)
     }
     
     func parser(

@@ -4,7 +4,7 @@ public final class Xml
 {
     private(set) var status:XmlStatusProtocol
     private var parser:XmlParser?
-    private var completion:((Any?, XmlError?) -> ())?
+    private var completion:(([String:Any]?, XmlError?) -> ())?
     
     init()
     {
@@ -15,7 +15,7 @@ public final class Xml
     
     func parse(
         data:Data,
-        completion:@escaping((Any?, XmlError?) -> ()))
+        completion:@escaping(([String:Any]?, XmlError?) -> ()))
     {
         status = XmlStatusParsing()
         
@@ -31,7 +31,7 @@ public final class Xml
         completion?(nil, error)
     }
     
-    func parsingFinished(xml:Any)
+    func parsingFinished(xml:[String:Any])
     {
         status = XmlStatusFinished()
         completion?(xml, nil)

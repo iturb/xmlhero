@@ -2,7 +2,7 @@ import Foundation
 
 public final class Xml
 {
-    private(set) var status:XmlStatusProtocol
+    private(set) public var status:XmlStatus
     private var parser:XmlParser?
     private var builder:XmlBuilder?
     private var completionParsing:(([String:Any]?, XmlError?) -> ())?

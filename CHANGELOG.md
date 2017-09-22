@@ -25,6 +25,8 @@ Run update
 - Clean stream from BOM (Byte Order Mark)
    characters to prevent parsing errors
 - Add support for attributes
+- Explicitly return a dictionary
+   Instead of just returning Any
 
 ##### Bug Fixes
 

@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
     s.name             = 'XmlHero'
     s.version          = '1.0.0'
-    s.summary          = 'XML Parser'
+    s.summary          = 'XML Engine'
     s.description      = <<-DESC
-                                Parse XML documents.
+                                Parse and create XML documents.
                             DESC
     s.homepage         = 'https://github.com/iturb/xmlhero'
     s.license          = { :type => "MIT", :file => "LICENSE" }

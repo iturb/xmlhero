@@ -4,7 +4,7 @@
 ![Swift](https://img.shields.io/badge/Swift-4-orange.svg)
 ![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=plastic)
 
-XML parser
+XML engine
 
 # Install
 ### CocoaPods
@@ -29,17 +29,26 @@ Once the Pod is installed import it in your project
 ```
 import XmlHero
 ```
+
 Parse a XML file
 ```
-// if your file is myFile.xml
+// myFile.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<colours>
+    <red>#FF0000</red>
+</colours>
+```
+
+```
+// your project
 
 Xml.object(
-    fileName:"myFile",
-    withExtension:"xml",
+    fileName:"myFile.xml",
     bundle:nil)
-{ (xml:Any?, error:XmlError?) in
+{ (xml:[String:Any]?, error:XmlError?) in
 
-    // xml is the parsed object
+    print(xml?["colours"])
 }
 ```
 

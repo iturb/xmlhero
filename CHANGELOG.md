@@ -27,6 +27,9 @@ Run update
 - Add support for attributes
 - Explicitly return a dictionary
    Instead of just returning Any
+- Remove file extension parameter on factory
+   and receive full file name on same parameter
+
 
 ##### Bug Fixes
 

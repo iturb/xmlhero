@@ -4,7 +4,7 @@ import XCTest
 final class TestBuilding:XCTestCase
 {
     private let kResourceName:String = "mockElements.xml"
-    private let kWaitExpectation:TimeInterval = 3
+    private let kWaitExpectation:TimeInterval = 20
     
     //MARK: tests
     

@@ -4,7 +4,9 @@ public final class Xml
 {
     private(set) var status:XmlStatusProtocol
     private var parser:XmlParser?
+    private var builder:XmlBuilder?
     private var completionParsing:(([String:Any]?, XmlError?) -> ())?
+    private var completionBuilding:((Data?, XmlError?) -> ())?
     
     init()
     {
@@ -25,10 +27,21 @@ public final class Xml
             data:data)
     }
     
+    func build(
+        object:Any,
+        completion:@escaping((Data?, XmlError?) -> ()))
+    {
+        self.completionBuilding = completion
+        builder = XmlBuilder(
+            xml:self,
+            object:object)
+    }
+    
     func parsingError(error:XmlError)
     {
         status = XmlStatusError()
         completionParsing?(nil, error)
+        parser = nil
         completionParsing = nil
     }
     
@@ -36,6 +49,7 @@ public final class Xml
     {
         status = XmlStatusFinished()
         completionParsing?(xml, nil)
+        parser = nil
         completionParsing = nil
     }
     
@@ -45,6 +59,9 @@ public final class Xml
     {
         status = XmlStatusCanceled()
         parser?.cancel()
+        parser = nil
+        builder = nil
         completionParsing = nil
+        completionBuilding = nil
     }
 }

@@ -9,7 +9,9 @@ extension Xml
         object:Any,
         completion:@escaping((Data?, XmlError?) -> ()))
     {
-        
+        xml.build(
+            object:object,
+            completion:completion)
     }
     
     //MARK: internal

@@ -10,7 +10,7 @@ public final class Xml
     
     init()
     {
-        status = XmlStatusStandby()
+        status = XmlStatus.standby
     }
     
     //MARK: internal
@@ -19,7 +19,7 @@ public final class Xml
         data:Data,
         completion:@escaping(([String:Any]?, XmlError?) -> ()))
     {
-        status = XmlStatusParsing()
+        status = XmlStatus.parsing
         
         self.completionParsing = completion
         parser = XmlParser(
@@ -31,6 +31,8 @@ public final class Xml
         object:Any,
         completion:@escaping((Data?, XmlError?) -> ()))
     {
+        status = XmlStatus.building
+        
         self.completionBuilding = completion
         builder = XmlBuilder(
             xml:self,
@@ -39,7 +41,8 @@ public final class Xml
     
     func parsingError(error:XmlError)
     {
-        status = XmlStatusError()
+        status = XmlStatus.error
+        
         completionParsing?(nil, error)
         parser = nil
         completionParsing = nil
@@ -47,7 +50,8 @@ public final class Xml
     
     func parsingFinished(xml:[String:Any])
     {
-        status = XmlStatusFinished()
+        status = XmlStatus.finished
+        
         completionParsing?(xml, nil)
         parser = nil
         completionParsing = nil
@@ -57,7 +61,8 @@ public final class Xml
     
     public func cancel()
     {
-        status = XmlStatusCanceled()
+        status = XmlStatus.canceled
+        
         parser?.cancel()
         parser = nil
         builder = nil

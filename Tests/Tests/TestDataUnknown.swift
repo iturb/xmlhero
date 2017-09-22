@@ -12,7 +12,7 @@ final class TestDataUnknown:XCTestCase
     {
         super.setUp()
         
-        let bundle:Bundle = Bundle(for:TestElements.self)
+        let bundle:Bundle = Bundle(for:TestDataUnknown.self)
         
         Xml.object(
             fileName:kResourceName,
@@ -27,7 +27,7 @@ final class TestDataUnknown:XCTestCase
     
     //MARK: tests
     
-    func testElementsTree()
+    func testLoadingData()
     {
         XCTAssertNil(
             error,

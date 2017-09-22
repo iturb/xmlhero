@@ -22,7 +22,7 @@
 		DA7840451F73CAC100769F66 /* XmlParserSerialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */; };
 		DAAB0B061F7503DE0029C0D0 /* data.unknown in Resources */ = {isa = PBXBuildFile; fileRef = DAAB0B051F7503DE0029C0D0 /* data.unknown */; };
 		DAAB0B081F7503F70029C0D0 /* TestDataUnknown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */; };
-		DAAB0B0A1F750B140029C0D0 /* XmlClean.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B091F750B140029C0D0 /* XmlClean.swift */; };
+		DAAB0B0B1F750B390029C0D0 /* XmlClean.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B091F750B140029C0D0 /* XmlClean.swift */; };
 		DAF9760A1F734EA3004AF525 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = DAF976091F734EA3004AF525 /* CHANGELOG.md */; };
 		DAF9760F1F7350BC004AF525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9760E1F7350BC004AF525 /* AppDelegate.swift */; };
 		DAF976111F7350F5004AF525 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF976101F7350F5004AF525 /* Controller.swift */; };
@@ -335,7 +335,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAAB0B081F7503F70029C0D0 /* TestDataUnknown.swift in Sources */,
-				DAAB0B0A1F750B140029C0D0 /* XmlClean.swift in Sources */,
 				DA392E591F74438400E40C4D /* TestLoading.swift in Sources */,
 				DA392E551F7442AA00E40C4D /* TestElements.swift in Sources */,
 			);
@@ -350,6 +349,7 @@
 				DA2B32C31F73A539009386F0 /* XmlError.swift in Sources */,
 				DAF976251F739CE4004AF525 /* XmlStatusFinished.swift in Sources */,
 				DAF9761D1F739A7B004AF525 /* XmlParser.swift in Sources */,
+				DAAB0B0B1F750B390029C0D0 /* XmlClean.swift in Sources */,
 				DAF976271F739D05004AF525 /* XmlStatusError.swift in Sources */,
 				DA7840431F73BE2F00769F66 /* XmlElement.swift in Sources */,
 				DAF9761F1F739BA2004AF525 /* XmlStatusProtocol.swift in Sources */,

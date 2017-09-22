@@ -2,11 +2,12 @@ import Foundation
 
 extension Xml
 {
+    private static let kNoExtension:String = ""
+    
     //MARK: private
     
     private class func url(
         fileName:String,
-        withExtension:String,
         bundle:Bundle?) -> URL?
     {
         let useBundle:Bundle
@@ -22,7 +23,7 @@ extension Xml
         
         let url:URL? = useBundle.url(
             forResource:fileName,
-            withExtension:withExtension)
+            withExtension:Xml.kNoExtension)
         
         return url
     }
@@ -30,7 +31,6 @@ extension Xml
     private class func asyncObject(
         xml:Xml,
         fileName:String,
-        withExtension:String,
         bundle:Bundle?,
         completion:@escaping(([String:Any]?, XmlError?) -> ()))
     {
@@ -38,7 +38,6 @@ extension Xml
             
             let url:URL = url(
                 fileName:fileName,
-                withExtension:withExtension,
                 bundle:bundle)
             
         else
@@ -98,8 +97,7 @@ extension Xml
     
     @discardableResult open class func object(
         fileName:String,
-        withExtension:String,
-        bundle:Bundle?,
+        bundle:Bundle? = nil,
         completion:@escaping(([String:Any]?, XmlError?) -> ())) -> Xml
     {
         let xml:Xml = Xml()
@@ -110,7 +108,6 @@ extension Xml
             asyncObject(
                 xml:xml,
                 fileName:fileName,
-                withExtension:withExtension,
                 bundle:bundle,
                 completion:completion)
         }

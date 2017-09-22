@@ -2,8 +2,7 @@ import UIKit
 
 class Controller:UIViewController
 {
-    private let kFileName:String = "demo"
-    private let kExtension:String = "xml"
+    private let kFileName:String = "demo.xml"
     
     override func loadView()
     {
@@ -15,10 +14,7 @@ class Controller:UIViewController
     {
         super.viewDidLoad()
         
-        Xml.object(
-            fileName:kFileName,
-            withExtension:kExtension,
-            bundle:nil)
+        Xml.object(fileName:kFileName)
         { [weak self] (xml:Any?, error:XmlError?) in
             
             guard

@@ -10,10 +10,16 @@ final class XmlElement
     
     init(
         name:String,
-        parent:XmlElement?)
+        parent:XmlElement?,
+        attributes:[String:String])
     {
         self.name = name
         self.parent = parent
+        
+        if attributes.count > 0
+        {
+            self.attributes = attributes
+        }
     }
     
     //MARK: internal
@@ -26,16 +32,6 @@ final class XmlElement
         }
         
         value?.append(string)
-    }
-    
-    func addAttribute(name:String, value:String)
-    {
-        if attributes == nil
-        {
-            attributes = [:]
-        }
-        
-        attributes?[name] = value
     }
     
     func addChild(child:XmlElement)

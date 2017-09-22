@@ -28,7 +28,8 @@ extension XmlParser
     {
         let element:XmlElement = XmlElement(
             name:elementName,
-            parent:current)
+            parent:current,
+            attributes:attributeDict)
         
         if let current:XmlElement = self.current
         {

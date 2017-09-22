@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <colours>
     <rgb>
-        <red>#FF0000</red>
-        <green />
-        <blue>#0000FF</blue>
+        <red spanishName="rojo">#FF0000</red>
+        <green spanishName="verde" />
+        <blue spanishName="azul">#0000FF</blue>
     </rgb>
 </colours>

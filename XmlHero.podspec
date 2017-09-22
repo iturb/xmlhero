@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name             = 'XmlHero'
-    s.version          = '1.0.0'
-    s.summary          = 'XML Engine'
+    s.version          = '1.1.0'
+    s.summary          = 'XML engine'
     s.description      = <<-DESC
                                 Parse and create XML documents.
                             DESC

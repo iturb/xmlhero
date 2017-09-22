@@ -20,6 +20,7 @@
 		DA7840411F73BBA000769F66 /* XmlParserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840401F73BBA000769F66 /* XmlParserDelegate.swift */; };
 		DA7840431F73BE2F00769F66 /* XmlElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840421F73BE2F00769F66 /* XmlElement.swift */; };
 		DA7840451F73CAC100769F66 /* XmlParserSerialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */; };
+		DAAB0B061F7503DE0029C0D0 /* data.unknown in Resources */ = {isa = PBXBuildFile; fileRef = DAAB0B051F7503DE0029C0D0 /* data.unknown */; };
 		DAF9760A1F734EA3004AF525 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = DAF976091F734EA3004AF525 /* CHANGELOG.md */; };
 		DAF9760F1F7350BC004AF525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9760E1F7350BC004AF525 /* AppDelegate.swift */; };
 		DAF976111F7350F5004AF525 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF976101F7350F5004AF525 /* Controller.swift */; };
@@ -64,6 +65,7 @@
 		DA7840401F73BBA000769F66 /* XmlParserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserDelegate.swift; sourceTree = "<group>"; };
 		DA7840421F73BE2F00769F66 /* XmlElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlElement.swift; sourceTree = "<group>"; };
 		DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserSerialize.swift; sourceTree = "<group>"; };
+		DAAB0B051F7503DE0029C0D0 /* data.unknown */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.unknown; sourceTree = "<group>"; };
 		DAF976091F734EA3004AF525 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		DAF9760E1F7350BC004AF525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAF976101F7350F5004AF525 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		DA392E531F74426700E40C4D /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				DAAB0B051F7503DE0029C0D0 /* data.unknown */,
 				DA392E561F74431E00E40C4D /* mockElements.xml */,
 			);
 			path = Mocks;
@@ -299,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAAB0B061F7503DE0029C0D0 /* data.unknown in Resources */,
 				DA392E571F74431E00E40C4D /* mockElements.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

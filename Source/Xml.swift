@@ -2,6 +2,7 @@ import Foundation
 
 public final class Xml
 {
+    static let kTextKey:String = "text"
     private(set) public var status:XmlStatus
     private var parser:XmlParser?
     private var builder:XmlBuilder?

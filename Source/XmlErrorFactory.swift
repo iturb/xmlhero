@@ -21,8 +21,8 @@ extension XmlError
             key,
             tableName:nil,
             bundle:bundle,
-            value:"",
-            comment:"")
+            value:String(),
+            comment:String())
         
         return string
     }

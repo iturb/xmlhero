@@ -2,7 +2,7 @@ import Foundation
 
 extension Xml
 {
-    private static let kNoExtension:String = ""
+    private static let kNoExtension:String = String()
     
     //MARK: private
     

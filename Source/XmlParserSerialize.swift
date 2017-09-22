@@ -1,9 +1,7 @@
 import Foundation
 
 extension XmlParser
-{
-    private static let kTextKey:String = "text"
-    
+{    
     //MARK: private
     
     private func serializeArray(
@@ -46,7 +44,7 @@ extension XmlParser
         }
         else if let value:String = xml.value
         {
-            serialized[XmlParser.kTextKey] = value
+            serialized[Xml.kTextKey] = value
         }
         
         let serializedAttributed:[String:Any] = attribute(

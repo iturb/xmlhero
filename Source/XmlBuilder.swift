@@ -9,5 +9,14 @@ final class XmlBuilder
         object:Any)
     {
         self.xml = xml
+        
+        let string:String? = deserialize(object:object)
+        
+        DispatchQueue.global(
+            qos:DispatchQoS.QoSClass.background).async
+        { [weak self] in
+        }
     }
+    
+    
 }

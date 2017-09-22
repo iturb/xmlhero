@@ -10,4 +10,16 @@ extension XmlBuilder
     {
         return kDeclaration
     }
+    
+    class func factoryOpenTag(
+        name:String,
+        attributes:[String:String]?) -> String
+    {
+        
+    }
+    
+    class func factoryCloseTag(name:String) -> String
+    {
+        
+    }
 }

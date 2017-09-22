@@ -4,12 +4,6 @@ extension XmlParser
 {
     //MARK: delegate
     
-    func parserDidStartDocument(
-        _ parser:XMLParser)
-    {
-        
-    }
-    
     func parserDidEndDocument(
         _ parser:XMLParser)
     {

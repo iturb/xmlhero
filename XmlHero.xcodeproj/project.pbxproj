@@ -24,6 +24,7 @@
 		DAAB0B0B1F750B390029C0D0 /* XmlClean.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B091F750B140029C0D0 /* XmlClean.swift */; };
 		DADFB35D1F757A0800DF3A47 /* XmlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADFB35C1F757A0800DF3A47 /* XmlBuilder.swift */; };
 		DADFB35F1F757B9A00DF3A47 /* XmlStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADFB35E1F757B9A00DF3A47 /* XmlStatus.swift */; };
+		DADFB3611F75813000DF3A47 /* XmlBuilderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADFB3601F75813000DF3A47 /* XmlBuilderFactory.swift */; };
 		DAE2E4F71F756B88008833EC /* XmlFactoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE2E4F61F756B88008833EC /* XmlFactoryObject.swift */; };
 		DAE2E4F91F7571ED008833EC /* XmlFactoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE2E4F81F7571ED008833EC /* XmlFactoryData.swift */; };
 		DAF9760A1F734EA3004AF525 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = DAF976091F734EA3004AF525 /* CHANGELOG.md */; };
@@ -68,6 +69,7 @@
 		DAAB0B091F750B140029C0D0 /* XmlClean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlClean.swift; sourceTree = "<group>"; };
 		DADFB35C1F757A0800DF3A47 /* XmlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilder.swift; sourceTree = "<group>"; };
 		DADFB35E1F757B9A00DF3A47 /* XmlStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlStatus.swift; sourceTree = "<group>"; };
+		DADFB3601F75813000DF3A47 /* XmlBuilderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilderFactory.swift; sourceTree = "<group>"; };
 		DAE2E4F61F756B88008833EC /* XmlFactoryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlFactoryObject.swift; sourceTree = "<group>"; };
 		DAE2E4F81F7571ED008833EC /* XmlFactoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlFactoryData.swift; sourceTree = "<group>"; };
 		DAF976091F734EA3004AF525 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				DA7840401F73BBA000769F66 /* XmlParserDelegate.swift */,
 				DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */,
 				DADFB35C1F757A0800DF3A47 /* XmlBuilder.swift */,
+				DADFB3601F75813000DF3A47 /* XmlBuilderFactory.swift */,
 				DA2B32C21F73A539009386F0 /* XmlError.swift */,
 				DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */,
 				DA7840421F73BE2F00769F66 /* XmlElement.swift */,
@@ -337,6 +340,7 @@
 			files = (
 				DA7840411F73BBA000769F66 /* XmlParserDelegate.swift in Sources */,
 				DA2B32C31F73A539009386F0 /* XmlError.swift in Sources */,
+				DADFB3611F75813000DF3A47 /* XmlBuilderFactory.swift in Sources */,
 				DAF9761D1F739A7B004AF525 /* XmlParser.swift in Sources */,
 				DAAB0B0B1F750B390029C0D0 /* XmlClean.swift in Sources */,
 				DADFB35D1F757A0800DF3A47 /* XmlBuilder.swift in Sources */,

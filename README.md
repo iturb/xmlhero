@@ -4,7 +4,7 @@
 ![Swift](https://img.shields.io/badge/Swift-4-orange.svg)
 ![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=plastic)
 
-XML engine
+XML engine for parsing and creation
 
 # Install
 ### CocoaPods
@@ -43,12 +43,22 @@ Parse a XML file
 ```
 // your project
 
-Xml.object(
-    fileName:"myFile.xml",
-    bundle:nil)
+Xml.object(fileName:"myFile.xml")
 { (xml:[String:Any]?, error:XmlError?) in
 
     print(xml?["colours"])
+}
+```
+
+Create a XML file
+```
+var myObject:[String:Any] = [:]
+myObject["colour"] = "red"
+
+Xml.data(object:myObject)
+{ (data:Data?, error:XmlError?) in
+
+    // do something with data
 }
 ```
 

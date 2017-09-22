@@ -87,8 +87,10 @@ extension Xml
         data:Data,
         completion:@escaping((Any?, XmlError?) -> ()))
     {
+        let dataCleaned:Data = cleanData(data:data)
+        
         xml.parse(
-            data:data,
+            data:dataCleaned,
             completion:completion)
     }
     

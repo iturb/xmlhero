@@ -4,7 +4,7 @@ public final class Xml
 {
     private(set) var status:XmlStatusProtocol
     private var parser:XmlParser?
-    private var completion:(([String:Any]?, XmlError?) -> ())?
+    private var completionParsing:(([String:Any]?, XmlError?) -> ())?
     
     init()
     {
@@ -19,7 +19,7 @@ public final class Xml
     {
         status = XmlStatusParsing()
         
-        self.completion = completion
+        self.completionParsing = completion
         parser = XmlParser(
             xml:self,
             data:data)
@@ -28,13 +28,15 @@ public final class Xml
     func parsingError(error:XmlError)
     {
         status = XmlStatusError()
-        completion?(nil, error)
+        completionParsing?(nil, error)
+        completionParsing = nil
     }
     
     func parsingFinished(xml:[String:Any])
     {
         status = XmlStatusFinished()
-        completion?(xml, nil)
+        completionParsing?(xml, nil)
+        completionParsing = nil
     }
     
     //MARK: public
@@ -43,5 +45,6 @@ public final class Xml
     {
         status = XmlStatusCanceled()
         parser?.cancel()
+        completionParsing = nil
     }
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-public struct XmlError:Error
+public struct XmlError:LocalizedError
 {
-    let localizedDescription:String
+    public let localizedDescription:String
 }

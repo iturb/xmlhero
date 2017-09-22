@@ -26,6 +26,7 @@
 		DADFB35F1F757B9A00DF3A47 /* XmlStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADFB35E1F757B9A00DF3A47 /* XmlStatus.swift */; };
 		DADFB3611F75813000DF3A47 /* XmlBuilderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADFB3601F75813000DF3A47 /* XmlBuilderFactory.swift */; };
 		DADFB3631F75945900DF3A47 /* XmlBuilderDeserialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADFB3621F75945900DF3A47 /* XmlBuilderDeserialize.swift */; };
+		DADFB3651F759F9500DF3A47 /* TestBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADFB3641F759F9500DF3A47 /* TestBuilding.swift */; };
 		DAE2E4F71F756B88008833EC /* XmlFactoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE2E4F61F756B88008833EC /* XmlFactoryObject.swift */; };
 		DAE2E4F91F7571ED008833EC /* XmlFactoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE2E4F81F7571ED008833EC /* XmlFactoryData.swift */; };
 		DAF9760A1F734EA3004AF525 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = DAF976091F734EA3004AF525 /* CHANGELOG.md */; };
@@ -72,6 +73,7 @@
 		DADFB35E1F757B9A00DF3A47 /* XmlStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlStatus.swift; sourceTree = "<group>"; };
 		DADFB3601F75813000DF3A47 /* XmlBuilderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilderFactory.swift; sourceTree = "<group>"; };
 		DADFB3621F75945900DF3A47 /* XmlBuilderDeserialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilderDeserialize.swift; sourceTree = "<group>"; };
+		DADFB3641F759F9500DF3A47 /* TestBuilding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBuilding.swift; sourceTree = "<group>"; };
 		DAE2E4F61F756B88008833EC /* XmlFactoryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlFactoryObject.swift; sourceTree = "<group>"; };
 		DAE2E4F81F7571ED008833EC /* XmlFactoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlFactoryData.swift; sourceTree = "<group>"; };
 		DAF976091F734EA3004AF525 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				DA392E581F74438400E40C4D /* TestLoading.swift */,
 				DA392E541F7442AA00E40C4D /* TestElements.swift */,
 				DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */,
+				DADFB3641F759F9500DF3A47 /* TestBuilding.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				DAAB0B081F7503F70029C0D0 /* TestDataUnknown.swift in Sources */,
 				DA392E591F74438400E40C4D /* TestLoading.swift in Sources */,
 				DA392E551F7442AA00E40C4D /* TestElements.swift in Sources */,
+				DADFB3651F759F9500DF3A47 /* TestBuilding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

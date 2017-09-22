@@ -4,7 +4,7 @@ import XCTest
 final class TestDataUnknown:XCTestCase
 {
     private let kResourceName:String = "data.unknown"
-    private let kWaitExpectation:TimeInterval = 2
+    private let kWaitExpectation:TimeInterval = 1
     
     //MARK: tests
     

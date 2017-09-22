@@ -4,7 +4,7 @@ import XCTest
 final class TestBuilding:XCTestCase
 {
     private let kResourceName:String = "mockElements.xml"
-    private let kWaitExpectation:TimeInterval = 20
+    private let kWaitExpectation:TimeInterval = 2
     
     //MARK: tests
     
@@ -57,7 +57,18 @@ final class TestBuilding:XCTestCase
                 string,
                 "failed building xml")
             
-            print(string)
+            guard
+                
+                let xmlString:String = string
+            
+            else
+            {
+                return
+            }
+            
+            XCTAssertGreaterThan(
+                xmlString.count,
+                0)
         }
     }
 }

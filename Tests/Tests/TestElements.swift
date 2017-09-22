@@ -8,7 +8,7 @@ final class TestElements:XCTestCase
     private let kKeyRgb:String = "rgb"
     private let kKeyRed:String = "red"
     private let kKeySpanishName:String = "spanishName"
-    private let kWaitExpectation:TimeInterval = 2
+    private let kWaitExpectation:TimeInterval = 1
     
     //MARK: tests
     

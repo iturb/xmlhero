@@ -5,7 +5,7 @@ final class TestLoading:XCTestCase
 {
     private let kResourceName:String = "mockElements.xml"
     private let kResourceExtension:String = String()
-    private let kWaitExpectation:TimeInterval = 2
+    private let kWaitExpectation:TimeInterval = 1
     
     //MARK: tests
     

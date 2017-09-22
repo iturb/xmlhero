@@ -12,9 +12,17 @@ extension XmlBuilder
         
         for key:String in keys
         {
-            let deserialized:String = deserialize(
-                name:key,
-                dictionary:dictionary)
+            guard
+                
+                let object:Any = dictionary[key],
+                let deserialized:String = deserialize(
+                    name:key,
+                    object:object)
+            
+            else
+            {
+                continue
+            }
             
             string.append(deserialized)
         }

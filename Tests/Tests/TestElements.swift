@@ -3,48 +3,50 @@ import XCTest
 
 final class TestElements:XCTestCase
 {
-    private var xml:Any?
-    private let kResourceName:String = "mockElements"
-    private let kResourceExtension:String = "xml"
+    private let kResourceName:String = "mockElements.xml"
     private let kKeyColours:String = "colours"
     private let kKeyRgb:String = "rgb"
-    
-    override func setUp()
-    {
-        super.setUp()
-        
-        let bundle:Bundle = Bundle(for:TestElements.self)
-        
-        Xml.object(
-            fileName:kResourceName,
-            withExtension:kResourceExtension,
-            bundle:bundle)
-        { (xml:Any?, error:XmlError?) in
-            
-            self.xml = xml
-        }
-    }
+    private let kWaitExpectation:TimeInterval = 2
     
     //MARK: tests
     
     func testElementsTree()
     {
-        let dictionary:[String:Any]? = xml as? [String:Any]
+        let loadExpectation:XCTestExpectation = expectation(
+            description:"load xml")
         
-        XCTAssertNotNil(
-            dictionary,
-            "failed parsing dictionary")
+        let bundle:Bundle = Bundle(for:TestElements.self)
+        var loadedXml:[String:Any]?
         
-        let colours:[String:Any]? = dictionary?[kKeyColours] as? [String:Any]
+        Xml.object(
+            fileName:kResourceName,
+            bundle:bundle)
+        { (xml:[String:Any]?, error:XmlError?) in
+            
+            loadedXml = xml
+            loadExpectation.fulfill()
+        }
         
-        XCTAssertNotNil(
-            colours,
-            "failed parsing element")
-        
-        let rgb:[String:Any]? = colours?[kKeyRgb] as? [String:Any]
-        
-        XCTAssertNotNil(
-            rgb,
-            "failed parsing element")
+        waitForExpectations(timeout:kWaitExpectation)
+        { (error:Error?) in
+            
+            XCTAssertNotNil(
+                loadedXml,
+                "failed parsing dictionary")
+            
+            let colours:[String:Any]? = loadedXml?[
+                self.kKeyColours] as? [String:Any]
+            
+            XCTAssertNotNil(
+                colours,
+                "failed parsing element")
+            
+            let rgb:[String:Any]? = colours?[
+                self.kKeyRgb] as? [String:Any]
+            
+            XCTAssertNotNil(
+                rgb,
+                "failed parsing element")
+        }
     }
 }

@@ -3,10 +3,9 @@ import XCTest
 
 final class TestDataUnknown:XCTestCase
 {
-    private var xml:Any?
+    private var xml:[String:Any]?
     private var error:XmlError?
-    private let kResourceName:String = "data"
-    private let kResourceExtension:String = "unknown"
+    private let kResourceName:String = "data.unknown"
     
     override func setUp()
     {
@@ -16,9 +15,8 @@ final class TestDataUnknown:XCTestCase
         
         Xml.object(
             fileName:kResourceName,
-            withExtension:kResourceExtension,
             bundle:bundle)
-        { (xml:Any?, error:XmlError?) in
+        { (xml:[String:Any]?, error:XmlError?) in
             
             self.xml = xml
             self.error = error

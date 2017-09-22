@@ -3,8 +3,8 @@ import XCTest
 
 final class TestLoading:XCTestCase
 {
-    private let kResourceName:String = "mockElements"
-    private let kResourceExtension:String = "xml"
+    private let kResourceName:String = "mockElements.xml"
+    private let kResourceExtension:String = ""
     private let kWaitExpectation:TimeInterval = 2
     
     //MARK: tests
@@ -15,14 +15,13 @@ final class TestLoading:XCTestCase
             description:"load xml")
         
         let bundle:Bundle = Bundle(for:TestLoading.self)
-        var loadedXml:Any?
+        var loadedXml:[String:Any]?
         var loadingError:XmlError?
         
         Xml.object(
             fileName:kResourceName,
-            withExtension:kResourceExtension,
             bundle:bundle)
-        { (xml:Any?, error:XmlError?) in
+        { (xml:[String:Any]?, error:XmlError?) in
             
             loadedXml = xml
             loadingError = error
@@ -61,12 +60,12 @@ final class TestLoading:XCTestCase
             return
         }
         
-        var loadedXml:Any?
+        var loadedXml:[String:Any]?
         var loadingError:XmlError?
         
         Xml.object(
             url:url)
-        { (xml:Any?, error:XmlError?) in
+        { (xml:[String:Any]?, error:XmlError?) in
             
             loadedXml = xml
             loadingError = error
@@ -116,12 +115,12 @@ final class TestLoading:XCTestCase
             return
         }
         
-        var loadedXml:Any?
+        var loadedXml:[String:Any]?
         var loadingError:XmlError?
         
         Xml.object(
             data:data)
-        { (xml:Any?, error:XmlError?) in
+        { (xml:[String:Any]?, error:XmlError?) in
             
             loadedXml = xml
             loadingError = error

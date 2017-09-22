@@ -6,19 +6,8 @@ extension XmlParser
     
     func parserDidEndDocument(
         _ parser:XMLParser)
-    {
-        guard
-        
-            let serialized:Any = serialize(elements:root)
-        
-        else
-        {
-            let error:XmlError = XmlError.failedSerializing()
-            parsingError(error:error)
-            
-            return
-        }
-        
+    {        
+        let serialized:Any = serialize(elements:root)
         parsingFinished(object:serialized)
     }
     

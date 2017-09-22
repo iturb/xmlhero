@@ -14,15 +14,7 @@ extension XmlParser
         
         for element:XmlElement in elements
         {
-            guard
-            
-                let serialized:Any = serialize(xml:element)
-            
-            else
-            {
-                continue
-            }
-            
+            let serialized:Any = serialize(xml:element)
             array.append(serialized)
         }
         
@@ -35,26 +27,18 @@ extension XmlParser
         
         for element:XmlElement in elements
         {   
-            guard
-                
-                let serialized:Any = serialize(xml:element)
-                
-            else
-            {
-                continue
-            }
-            
+            let serialized:Any = serialize(xml:element)
             dictionary[element.name] = serialized
         }
         
         return dictionary
     }
     
-    private func serialize(xml:XmlElement) -> Any?
+    private func serialize(xml:XmlElement) -> Any
     {
         if let children:[XmlElement] = xml.children
         {
-            let serialized:Any? = serialize(elements:children)
+            let serialized:Any = serialize(elements:children)
             
             return serialized
         }
@@ -63,12 +47,14 @@ extension XmlParser
             return value
         }
         
-        return nil
+        let dictionary:[String:Any] = [:]
+        
+        return dictionary
     }
     
     //MARK: internal
     
-    func serialize(elements:[XmlElement]) -> Any?
+    func serialize(elements:[XmlElement]) -> Any
     {
         guard
             
@@ -77,7 +63,9 @@ extension XmlParser
             
         else
         {
-            return nil
+            let dictionary:[String:Any] = [:]
+            
+            return dictionary
         }
         
         let serialized:Any

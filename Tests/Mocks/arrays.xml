@@ -11,7 +11,8 @@
         <option name="physicalView" />
         <option name="playlist" />
         <option name="viewRefresh" />
-    </function><function type="music">
+    </function>
+    <function type="music">
         <format contentType="audio/mp3" />
         <format contentType="audio/mp4" codec="AAC" />
         <format contentType="audio/wav" codec="LPCM" />

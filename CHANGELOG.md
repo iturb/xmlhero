@@ -36,3 +36,14 @@ Run update
 
 - Implement LocalizedError protocol instead
   of just Error so descriptions are available
+  
+  ## 1.1.1 (2017-10-23)
+  
+  ##### Enhancements
+  
+  - None
+  
+  
+  ##### Bug Fixes
+  
+  - Parse arrays in XML files

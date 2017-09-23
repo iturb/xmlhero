@@ -20,6 +20,7 @@
 		DA7840431F73BE2F00769F66 /* XmlElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840421F73BE2F00769F66 /* XmlElement.swift */; };
 		DA7840451F73CAC100769F66 /* XmlParserSerialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */; };
 		DA99F88F1F76FE7B00ED1246 /* arrays.xml in Resources */ = {isa = PBXBuildFile; fileRef = DA99F88E1F76FE7B00ED1246 /* arrays.xml */; };
+		DA99F8911F7701FE00ED1246 /* TestParsingArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA99F8901F7701FE00ED1246 /* TestParsingArrays.swift */; };
 		DAAB0B061F7503DE0029C0D0 /* data.unknown in Resources */ = {isa = PBXBuildFile; fileRef = DAAB0B051F7503DE0029C0D0 /* data.unknown */; };
 		DAAB0B081F7503F70029C0D0 /* TestDataUnknown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */; };
 		DAAB0B0B1F750B390029C0D0 /* XmlClean.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B091F750B140029C0D0 /* XmlClean.swift */; };
@@ -68,6 +69,7 @@
 		DA7840421F73BE2F00769F66 /* XmlElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlElement.swift; sourceTree = "<group>"; };
 		DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserSerialize.swift; sourceTree = "<group>"; };
 		DA99F88E1F76FE7B00ED1246 /* arrays.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = arrays.xml; sourceTree = "<group>"; };
+		DA99F8901F7701FE00ED1246 /* TestParsingArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestParsingArrays.swift; sourceTree = "<group>"; };
 		DAAB0B051F7503DE0029C0D0 /* data.unknown */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.unknown; sourceTree = "<group>"; };
 		DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataUnknown.swift; sourceTree = "<group>"; };
 		DAAB0B091F750B140029C0D0 /* XmlClean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlClean.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				DA392E541F7442AA00E40C4D /* TestElements.swift */,
 				DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */,
 				DADFB3641F759F9500DF3A47 /* TestBuilding.swift */,
+				DA99F8901F7701FE00ED1246 /* TestParsingArrays.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAAB0B081F7503F70029C0D0 /* TestDataUnknown.swift in Sources */,
+				DA99F8911F7701FE00ED1246 /* TestParsingArrays.swift in Sources */,
 				DA392E591F74438400E40C4D /* TestLoading.swift in Sources */,
 				DA392E551F7442AA00E40C4D /* TestElements.swift in Sources */,
 				DADFB3651F759F9500DF3A47 /* TestBuilding.swift in Sources */,

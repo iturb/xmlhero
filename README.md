@@ -23,6 +23,12 @@ If you are wondering what is CocoaPods take a look at: [https://cocoapods.org](h
 # Usage
 ### Xml
 Xml is the class you need to use for XML parsing
+- Can load XML files by file name, url or data
+- Your block will be called once the XML is loaded
+   or if there was an error
+- Works in the background so your UI is not blocked
+- Your block will be called in a background thread,
+   bear that in mind before trying to edit the UI
 
 ### Add XmlHero
 Once the Pod is installed import it in your project

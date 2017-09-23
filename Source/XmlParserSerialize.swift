@@ -4,13 +4,38 @@ extension XmlParser
 {    
     //MARK: private
     
-    private func serializeArray(
-        name:String,
-        elements:[XmlElement]) -> [String:Any]
+    private func serializeGrouped(
+        array:[XmlElement]) -> Any?
     {
-        var dictionary:[String:[Any]] = [:]
+        let serialized:Any
+        
+        if array.count > 1
+        {
+            serialized = serializeArray(
+                elements:array)
+        }
+        else
+        {
+            guard
+                
+                let first:XmlElement = array.first
+                
+            else
+            {
+                return nil
+            }
+            
+            serialized = serialize(
+                xml:first)
+        }
+        
+        return serialized
+    }
+    
+    private func serializeArray(
+        elements:[XmlElement]) -> [Any]
+    {
         var array:[Any] = []
-        dictionary[name] = array
         
         for element:XmlElement in elements
         {
@@ -18,20 +43,7 @@ extension XmlParser
             array.append(serialized)
         }
         
-        return dictionary
-    }
-    
-    private func serializeDictionary(elements:[XmlElement]) -> [String:Any]
-    {
-        var dictionary:[String:Any] = [:]
-        
-        for element:XmlElement in elements
-        {   
-            let serialized:Any = serialize(xml:element)
-            dictionary[element.name] = serialized
-        }
-        
-        return dictionary
+        return array
     }
     
     private func serialize(xml:XmlElement) -> [String:Any]
@@ -73,35 +85,56 @@ extension XmlParser
         return mutable
     }
     
+    private func groupElements(
+        elements:[XmlElement]) -> [String:[XmlElement]]
+    {
+        var group:[String:[XmlElement]] = [:]
+        
+        for element:XmlElement in elements
+        {
+            let name:String = element.name
+            var array:[XmlElement]
+            
+            if let existingArray:[XmlElement] = group[name]
+            {
+                array = existingArray
+            }
+            else
+            {
+                array = []
+            }
+            
+            array.append(element)
+            
+            group[name] = array
+        }
+        
+        return group
+    }
+    
     //MARK: internal
     
     func serialize(elements:[XmlElement]) -> [String:Any]
     {
-        guard
-            
-            let first:XmlElement = elements.first,
-            let last:XmlElement = elements.last
-            
-        else
-        {
-            let dictionary:[String:Any] = [:]
-            
-            return dictionary
-        }
+        let grouped:[String:[XmlElement]] = groupElements(
+            elements:elements)
+        let keys:[String] = Array(grouped.keys)
+        var serialized:[String:Any] = [:]
         
-        let serialized:[String:Any]
-        let count:Int = elements.count
-        
-        if count > 1 && first.name == last.name
+        for key:String in keys
         {
-            serialized = serializeArray(
-                name:first.name,
-                elements:elements)
-        }
-        else
-        {
-            serialized = serializeDictionary(
-                elements:elements)
+            guard
+            
+                let array:[XmlElement] = grouped[key],
+                let element:Any = serializeGrouped(
+                    array:array)
+            
+            else
+            {
+                continue
+            }
+            
+            serialized[key] = element
         }
         
         return serialized

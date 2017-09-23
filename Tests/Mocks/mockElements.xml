@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <colours>
     <rgb>
         <red spanishName="rojo">#FF0000</red>
@@ -6,4 +6,3 @@
         <blue spanishName="azul">#0000FF</blue>
     </rgb>
 </colours>
-

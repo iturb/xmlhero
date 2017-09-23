@@ -19,6 +19,7 @@
 		DA7840411F73BBA000769F66 /* XmlParserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840401F73BBA000769F66 /* XmlParserDelegate.swift */; };
 		DA7840431F73BE2F00769F66 /* XmlElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840421F73BE2F00769F66 /* XmlElement.swift */; };
 		DA7840451F73CAC100769F66 /* XmlParserSerialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */; };
+		DA99F88F1F76FE7B00ED1246 /* arrays.xml in Resources */ = {isa = PBXBuildFile; fileRef = DA99F88E1F76FE7B00ED1246 /* arrays.xml */; };
 		DAAB0B061F7503DE0029C0D0 /* data.unknown in Resources */ = {isa = PBXBuildFile; fileRef = DAAB0B051F7503DE0029C0D0 /* data.unknown */; };
 		DAAB0B081F7503F70029C0D0 /* TestDataUnknown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */; };
 		DAAB0B0B1F750B390029C0D0 /* XmlClean.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B091F750B140029C0D0 /* XmlClean.swift */; };
@@ -66,6 +67,7 @@
 		DA7840401F73BBA000769F66 /* XmlParserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserDelegate.swift; sourceTree = "<group>"; };
 		DA7840421F73BE2F00769F66 /* XmlElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlElement.swift; sourceTree = "<group>"; };
 		DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserSerialize.swift; sourceTree = "<group>"; };
+		DA99F88E1F76FE7B00ED1246 /* arrays.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = arrays.xml; sourceTree = "<group>"; };
 		DAAB0B051F7503DE0029C0D0 /* data.unknown */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.unknown; sourceTree = "<group>"; };
 		DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataUnknown.swift; sourceTree = "<group>"; };
 		DAAB0B091F750B140029C0D0 /* XmlClean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlClean.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				DAAB0B051F7503DE0029C0D0 /* data.unknown */,
 				DA392E561F74431E00E40C4D /* mockElements.xml */,
+				DA99F88E1F76FE7B00ED1246 /* arrays.xml */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			files = (
 				DAAB0B061F7503DE0029C0D0 /* data.unknown in Resources */,
 				DA392E571F74431E00E40C4D /* mockElements.xml in Resources */,
+				DA99F88F1F76FE7B00ED1246 /* arrays.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

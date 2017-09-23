@@ -10,13 +10,14 @@ extension XmlParser
     {
         var dictionary:[String:[Any]] = [:]
         var array:[Any] = []
-        dictionary[name] = array
         
         for element:XmlElement in elements
         {
             let serialized:Any = serialize(xml:element)
             array.append(serialized)
         }
+        
+        dictionary[name] = array
         
         return dictionary
     }

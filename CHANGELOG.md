@@ -38,13 +38,14 @@ Run update
   of just Error so descriptions are available
   
   
-  ## 1.1.1 (2017-10-23)
+## 1.1.1 (2017-10-23)
   
-  ##### Enhancements
+##### Enhancements
   
-  - None
+- None
   
   
-  ##### Bug Fixes
+##### Bug Fixes
   
-  - Parse arrays in XML files
+- Parse arrays in XML files
+

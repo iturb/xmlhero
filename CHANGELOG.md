@@ -35,4 +35,4 @@ Run update
 ##### Bug Fixes
 
 - Implement LocalizedError protocol instead
-  of just Error so description are available
+  of just Error so descriptions are available

@@ -29,6 +29,7 @@
 		DAA631981F802D3D009A8FF1 /* TestNonStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA631971F802D3D009A8FF1 /* TestNonStrings.swift */; };
 		DAA6319C1F802EE1009A8FF1 /* XmlFactoryObjectName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6319B1F802EE1009A8FF1 /* XmlFactoryObjectName.swift */; };
 		DAA6319E1F802EEB009A8FF1 /* XmlFactoryObjectUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6319D1F802EEB009A8FF1 /* XmlFactoryObjectUrl.swift */; };
+		DAA631A01F8037F7009A8FF1 /* XmlBuilderDeserializeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6319F1F8037F7009A8FF1 /* XmlBuilderDeserializeString.swift */; };
 		DAAB0B061F7503DE0029C0D0 /* data.unknown in Resources */ = {isa = PBXBuildFile; fileRef = DAAB0B051F7503DE0029C0D0 /* data.unknown */; };
 		DAAB0B081F7503F70029C0D0 /* TestDataUnknown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */; };
 		DAAB0B0B1F750B390029C0D0 /* XmlClean.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B091F750B140029C0D0 /* XmlClean.swift */; };
@@ -86,6 +87,7 @@
 		DAA631971F802D3D009A8FF1 /* TestNonStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNonStrings.swift; sourceTree = "<group>"; };
 		DAA6319B1F802EE1009A8FF1 /* XmlFactoryObjectName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlFactoryObjectName.swift; sourceTree = "<group>"; };
 		DAA6319D1F802EEB009A8FF1 /* XmlFactoryObjectUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlFactoryObjectUrl.swift; sourceTree = "<group>"; };
+		DAA6319F1F8037F7009A8FF1 /* XmlBuilderDeserializeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilderDeserializeString.swift; sourceTree = "<group>"; };
 		DAAB0B051F7503DE0029C0D0 /* data.unknown */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.unknown; sourceTree = "<group>"; };
 		DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataUnknown.swift; sourceTree = "<group>"; };
 		DAAB0B091F750B140029C0D0 /* XmlClean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlClean.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				DADFB3601F75813000DF3A47 /* XmlBuilderFactory.swift */,
 				DAA631951F802AFC009A8FF1 /* XmlBuilderFactoryTags.swift */,
 				DADFB3621F75945900DF3A47 /* XmlBuilderDeserialize.swift */,
+				DAA6319F1F8037F7009A8FF1 /* XmlBuilderDeserializeString.swift */,
 				DAA631931F802A54009A8FF1 /* XmlBuilderDeserializeTags.swift */,
 				DA16D15B1F8029090014E191 /* XmlBuilderDeserializeDictionary.swift */,
 				DA16D15D1F8029140014E191 /* XmlBuilderDeserializeArray.swift */,
@@ -399,6 +402,7 @@
 				DA2B32C51F73A584009386F0 /* XmlErrorFactory.swift in Sources */,
 				DADFB35F1F757B9A00DF3A47 /* XmlStatus.swift in Sources */,
 				DAE2E4F91F7571ED008833EC /* XmlFactoryData.swift in Sources */,
+				DAA631A01F8037F7009A8FF1 /* XmlBuilderDeserializeString.swift in Sources */,
 				DAF976111F7350F5004AF525 /* Controller.swift in Sources */,
 				DA7840451F73CAC100769F66 /* XmlParserSerialize.swift in Sources */,
 				DAF976151F738AED004AF525 /* View.swift in Sources */,

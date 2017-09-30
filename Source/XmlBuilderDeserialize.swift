@@ -20,9 +20,13 @@ extension XmlBuilder
         {
             deserialized = string
         }
-        else
+        else if let _:NSNull = object as? NSNull
         {
             deserialized = nil
+        }
+        else
+        {
+            deserialized = String(describing:object)
         }
         
         return deserialized

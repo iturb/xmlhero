@@ -2,3 +2,4 @@
 "XmlError_failedLoadingData"="Failed loading data file";
 "XmlError_failedParsing"="Failed parsing file";
 "XmlError_failedDeserializing"="Failed deserializing object";
+"XmlError_failedCreatingData"="Failed creating data";

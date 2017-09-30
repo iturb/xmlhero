@@ -44,19 +44,6 @@ final class XmlBuilder
     {
         let headered:String = addHeader(string:string)
         
-        guard
-        
-            let data:Data = headered.data(
-                using:String.Encoding.utf8,
-                allowLossyConversion:false)
-        
-        else
-        {
-            failed()
-            
-            return
-        }
-        
-        xml?.buildingFinished(data:data)
+        xml?.buildingFinished(string:headered)
     }
 }

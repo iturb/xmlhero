@@ -18,6 +18,33 @@ Run update
 > pod update
 ```
 
+## 1.2.0 (2017-10-30)
+
+##### Enhancements
+
+- Add functionality to create XML Strings
+  from objects besides creating Data
+- Deserialize primitives in objects
+
+
+##### Bug Fixes
+
+- Add XML declaration when building
+  XML files as Strings or Data
+
+
+## 1.1.1 (2017-10-23)
+
+##### Enhancements
+
+- None
+
+
+##### Bug Fixes
+
+- Parse arrays in XML files
+
+
 ## 1.1.0 (2017-10-22)
 
 ##### Enhancements
@@ -36,16 +63,3 @@ Run update
 
 - Implement LocalizedError protocol instead
   of just Error so descriptions are available
-  
-  
-## 1.1.1 (2017-10-23)
-  
-##### Enhancements
-  
-- None
-  
-  
-##### Bug Fixes
-  
-- Parse arrays in XML files
-

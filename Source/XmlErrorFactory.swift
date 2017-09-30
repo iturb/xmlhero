@@ -60,4 +60,12 @@ extension XmlError
         
         return error
     }
+    
+    static func failedCreatingData() -> XmlError
+    {
+        let error:XmlError = errorWithKey(
+            key:"XmlError_failedCreatingData")
+        
+        return error
+    }
 }

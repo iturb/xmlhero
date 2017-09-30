@@ -6,20 +6,35 @@ extension Xml
     
     class func asyncObject(
         xml:Xml,
-        data:Data,
+        url:URL,
         completion:@escaping(([String:Any]?, XmlError?) -> ()))
     {
-        let dataCleaned:Data = cleanData(data:data)
+        let data:Data
         
-        xml.parse(
-            data:dataCleaned,
+        do
+        {
+            try data = Data(
+                contentsOf:url,
+                options:Data.ReadingOptions.mappedIfSafe)
+        }
+        catch
+        {
+            let error:XmlError = XmlError.failedLoadingData()
+            completion(nil, error)
+            
+            return
+        }
+        
+        asyncObject(
+            xml:xml,
+            data:data,
             completion:completion)
     }
     
     //MARK: open
     
     @discardableResult open class func object(
-        data:Data,
+        url:URL,
         completion:@escaping(([String:Any]?, XmlError?) -> ())) -> Xml
     {
         let xml:Xml = Xml()
@@ -29,7 +44,7 @@ extension Xml
         {
             asyncObject(
                 xml:xml,
-                data:data,
+                url:url,
                 completion:completion)
         }
         

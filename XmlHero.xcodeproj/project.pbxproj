@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA16D15A1F8026200014E191 /* TestDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16D1591F8026200014E191 /* TestDeclaration.swift */; };
+		DA16D15F1F8029E10014E191 /* XmlBuilderDeserializeDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16D15B1F8029090014E191 /* XmlBuilderDeserializeDictionary.swift */; };
+		DA16D1601F8029E50014E191 /* XmlBuilderDeserializeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16D15D1F8029140014E191 /* XmlBuilderDeserializeArray.swift */; };
 		DA2B32C31F73A539009386F0 /* XmlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B32C21F73A539009386F0 /* XmlError.swift */; };
 		DA2B32C51F73A584009386F0 /* XmlErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */; };
 		DA2B32C91F73A71B009386F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA2B32C71F73A71B009386F0 /* Localizable.strings */; };
@@ -21,6 +24,12 @@
 		DA7840451F73CAC100769F66 /* XmlParserSerialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */; };
 		DA99F88F1F76FE7B00ED1246 /* arrays.xml in Resources */ = {isa = PBXBuildFile; fileRef = DA99F88E1F76FE7B00ED1246 /* arrays.xml */; };
 		DA99F8911F7701FE00ED1246 /* TestParsingArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA99F8901F7701FE00ED1246 /* TestParsingArrays.swift */; };
+		DAA631941F802A54009A8FF1 /* XmlBuilderDeserializeTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA631931F802A54009A8FF1 /* XmlBuilderDeserializeTags.swift */; };
+		DAA631961F802AFC009A8FF1 /* XmlBuilderFactoryTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA631951F802AFC009A8FF1 /* XmlBuilderFactoryTags.swift */; };
+		DAA631981F802D3D009A8FF1 /* TestNonStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA631971F802D3D009A8FF1 /* TestNonStrings.swift */; };
+		DAA6319C1F802EE1009A8FF1 /* XmlFactoryObjectName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6319B1F802EE1009A8FF1 /* XmlFactoryObjectName.swift */; };
+		DAA6319E1F802EEB009A8FF1 /* XmlFactoryObjectUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6319D1F802EEB009A8FF1 /* XmlFactoryObjectUrl.swift */; };
+		DAA631A01F8037F7009A8FF1 /* XmlBuilderDeserializeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6319F1F8037F7009A8FF1 /* XmlBuilderDeserializeString.swift */; };
 		DAAB0B061F7503DE0029C0D0 /* data.unknown in Resources */ = {isa = PBXBuildFile; fileRef = DAAB0B051F7503DE0029C0D0 /* data.unknown */; };
 		DAAB0B081F7503F70029C0D0 /* TestDataUnknown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */; };
 		DAAB0B0B1F750B390029C0D0 /* XmlClean.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B091F750B140029C0D0 /* XmlClean.swift */; };
@@ -52,6 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA16D1591F8026200014E191 /* TestDeclaration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDeclaration.swift; sourceTree = "<group>"; };
+		DA16D15B1F8029090014E191 /* XmlBuilderDeserializeDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilderDeserializeDictionary.swift; sourceTree = "<group>"; };
+		DA16D15D1F8029140014E191 /* XmlBuilderDeserializeArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilderDeserializeArray.swift; sourceTree = "<group>"; };
 		DA2B32C21F73A539009386F0 /* XmlError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlError.swift; sourceTree = "<group>"; };
 		DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlErrorFactory.swift; sourceTree = "<group>"; };
 		DA2B32C81F73A71B009386F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -70,6 +82,12 @@
 		DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserSerialize.swift; sourceTree = "<group>"; };
 		DA99F88E1F76FE7B00ED1246 /* arrays.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = arrays.xml; sourceTree = "<group>"; };
 		DA99F8901F7701FE00ED1246 /* TestParsingArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestParsingArrays.swift; sourceTree = "<group>"; };
+		DAA631931F802A54009A8FF1 /* XmlBuilderDeserializeTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilderDeserializeTags.swift; sourceTree = "<group>"; };
+		DAA631951F802AFC009A8FF1 /* XmlBuilderFactoryTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilderFactoryTags.swift; sourceTree = "<group>"; };
+		DAA631971F802D3D009A8FF1 /* TestNonStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNonStrings.swift; sourceTree = "<group>"; };
+		DAA6319B1F802EE1009A8FF1 /* XmlFactoryObjectName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlFactoryObjectName.swift; sourceTree = "<group>"; };
+		DAA6319D1F802EEB009A8FF1 /* XmlFactoryObjectUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlFactoryObjectUrl.swift; sourceTree = "<group>"; };
+		DAA6319F1F8037F7009A8FF1 /* XmlBuilderDeserializeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilderDeserializeString.swift; sourceTree = "<group>"; };
 		DAAB0B051F7503DE0029C0D0 /* data.unknown */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.unknown; sourceTree = "<group>"; };
 		DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataUnknown.swift; sourceTree = "<group>"; };
 		DAAB0B091F750B140029C0D0 /* XmlClean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlClean.swift; sourceTree = "<group>"; };
@@ -134,6 +152,8 @@
 				DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */,
 				DADFB3641F759F9500DF3A47 /* TestBuilding.swift */,
 				DA99F8901F7701FE00ED1246 /* TestParsingArrays.swift */,
+				DA16D1591F8026200014E191 /* TestDeclaration.swift */,
+				DAA631971F802D3D009A8FF1 /* TestNonStrings.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -188,6 +208,8 @@
 			children = (
 				DAF9761A1F739A39004AF525 /* Xml.swift */,
 				DAE2E4F61F756B88008833EC /* XmlFactoryObject.swift */,
+				DAA6319D1F802EEB009A8FF1 /* XmlFactoryObjectUrl.swift */,
+				DAA6319B1F802EE1009A8FF1 /* XmlFactoryObjectName.swift */,
 				DAE2E4F81F7571ED008833EC /* XmlFactoryData.swift */,
 				DAAB0B091F750B140029C0D0 /* XmlClean.swift */,
 				DADFB35E1F757B9A00DF3A47 /* XmlStatus.swift */,
@@ -196,7 +218,12 @@
 				DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */,
 				DADFB35C1F757A0800DF3A47 /* XmlBuilder.swift */,
 				DADFB3601F75813000DF3A47 /* XmlBuilderFactory.swift */,
+				DAA631951F802AFC009A8FF1 /* XmlBuilderFactoryTags.swift */,
 				DADFB3621F75945900DF3A47 /* XmlBuilderDeserialize.swift */,
+				DAA6319F1F8037F7009A8FF1 /* XmlBuilderDeserializeString.swift */,
+				DAA631931F802A54009A8FF1 /* XmlBuilderDeserializeTags.swift */,
+				DA16D15B1F8029090014E191 /* XmlBuilderDeserializeDictionary.swift */,
+				DA16D15D1F8029140014E191 /* XmlBuilderDeserializeArray.swift */,
 				DA2B32C21F73A539009386F0 /* XmlError.swift */,
 				DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */,
 				DA7840421F73BE2F00769F66 /* XmlElement.swift */,
@@ -346,6 +373,8 @@
 				DA392E591F74438400E40C4D /* TestLoading.swift in Sources */,
 				DA392E551F7442AA00E40C4D /* TestElements.swift in Sources */,
 				DADFB3651F759F9500DF3A47 /* TestBuilding.swift in Sources */,
+				DAA631981F802D3D009A8FF1 /* TestNonStrings.swift in Sources */,
+				DA16D15A1F8026200014E191 /* TestDeclaration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,18 +384,25 @@
 			files = (
 				DA7840411F73BBA000769F66 /* XmlParserDelegate.swift in Sources */,
 				DA2B32C31F73A539009386F0 /* XmlError.swift in Sources */,
+				DAA631941F802A54009A8FF1 /* XmlBuilderDeserializeTags.swift in Sources */,
 				DADFB3611F75813000DF3A47 /* XmlBuilderFactory.swift in Sources */,
 				DAF9761D1F739A7B004AF525 /* XmlParser.swift in Sources */,
+				DA16D1601F8029E50014E191 /* XmlBuilderDeserializeArray.swift in Sources */,
 				DAAB0B0B1F750B390029C0D0 /* XmlClean.swift in Sources */,
 				DADFB35D1F757A0800DF3A47 /* XmlBuilder.swift in Sources */,
 				DA7840431F73BE2F00769F66 /* XmlElement.swift in Sources */,
 				DADFB3631F75945900DF3A47 /* XmlBuilderDeserialize.swift in Sources */,
+				DAA6319C1F802EE1009A8FF1 /* XmlFactoryObjectName.swift in Sources */,
+				DAA631961F802AFC009A8FF1 /* XmlBuilderFactoryTags.swift in Sources */,
 				DAE2E4F71F756B88008833EC /* XmlFactoryObject.swift in Sources */,
+				DA16D15F1F8029E10014E191 /* XmlBuilderDeserializeDictionary.swift in Sources */,
 				DAF9760F1F7350BC004AF525 /* AppDelegate.swift in Sources */,
+				DAA6319E1F802EEB009A8FF1 /* XmlFactoryObjectUrl.swift in Sources */,
 				DAF9761B1F739A39004AF525 /* Xml.swift in Sources */,
 				DA2B32C51F73A584009386F0 /* XmlErrorFactory.swift in Sources */,
 				DADFB35F1F757B9A00DF3A47 /* XmlStatus.swift in Sources */,
 				DAE2E4F91F7571ED008833EC /* XmlFactoryData.swift in Sources */,
+				DAA631A01F8037F7009A8FF1 /* XmlBuilderDeserializeString.swift in Sources */,
 				DAF976111F7350F5004AF525 /* Controller.swift in Sources */,
 				DA7840451F73CAC100769F66 /* XmlParserSerialize.swift in Sources */,
 				DAF976151F738AED004AF525 /* View.swift in Sources */,
@@ -399,7 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -418,7 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				INFOPLIST_FILE = Tests/Info.plist;

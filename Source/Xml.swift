@@ -7,7 +7,7 @@ public final class Xml
     private var parser:XmlParser?
     private var builder:XmlBuilder?
     private var completionParsing:(([String:Any]?, XmlError?) -> ())?
-    private var completionBuilding:((Data?, XmlError?) -> ())?
+    private var completionBuilding:((String?, XmlError?) -> ())?
     
     init()
     {
@@ -30,7 +30,7 @@ public final class Xml
     
     func build(
         object:Any,
-        completion:@escaping((Data?, XmlError?) -> ()))
+        completion:@escaping((String?, XmlError?) -> ()))
     {
         status = XmlStatus.building
         
@@ -67,11 +67,11 @@ public final class Xml
         completionBuilding = nil
     }
     
-    func buildingFinished(data:Data)
+    func buildingFinished(string:String)
     {
         status = XmlStatus.finished
         
-        completionBuilding?(data, nil)
+        completionBuilding?(string, nil)
         builder = nil
         completionBuilding = nil
     }

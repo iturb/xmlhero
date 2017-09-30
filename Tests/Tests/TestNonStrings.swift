@@ -30,8 +30,6 @@ final class TestNonStrings:XCTestCase
     private func validatePrimitives(
         string:String)
     {
-        print(string)
-        
         let mockPrimitiveB:String = "\(kPrimitiveB)"
         let mockPrimitiveC:String = "\(kPrimitiveC)"
         

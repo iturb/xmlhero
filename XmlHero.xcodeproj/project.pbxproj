@@ -26,6 +26,7 @@
 		DA99F8911F7701FE00ED1246 /* TestParsingArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA99F8901F7701FE00ED1246 /* TestParsingArrays.swift */; };
 		DAA631941F802A54009A8FF1 /* XmlBuilderDeserializeTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA631931F802A54009A8FF1 /* XmlBuilderDeserializeTags.swift */; };
 		DAA631961F802AFC009A8FF1 /* XmlBuilderFactoryTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA631951F802AFC009A8FF1 /* XmlBuilderFactoryTags.swift */; };
+		DAA631981F802D3D009A8FF1 /* TestNonStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA631971F802D3D009A8FF1 /* TestNonStrings.swift */; };
 		DAAB0B061F7503DE0029C0D0 /* data.unknown in Resources */ = {isa = PBXBuildFile; fileRef = DAAB0B051F7503DE0029C0D0 /* data.unknown */; };
 		DAAB0B081F7503F70029C0D0 /* TestDataUnknown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */; };
 		DAAB0B0B1F750B390029C0D0 /* XmlClean.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B091F750B140029C0D0 /* XmlClean.swift */; };
@@ -80,6 +81,7 @@
 		DA99F8901F7701FE00ED1246 /* TestParsingArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestParsingArrays.swift; sourceTree = "<group>"; };
 		DAA631931F802A54009A8FF1 /* XmlBuilderDeserializeTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilderDeserializeTags.swift; sourceTree = "<group>"; };
 		DAA631951F802AFC009A8FF1 /* XmlBuilderFactoryTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilderFactoryTags.swift; sourceTree = "<group>"; };
+		DAA631971F802D3D009A8FF1 /* TestNonStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNonStrings.swift; sourceTree = "<group>"; };
 		DAAB0B051F7503DE0029C0D0 /* data.unknown */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.unknown; sourceTree = "<group>"; };
 		DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataUnknown.swift; sourceTree = "<group>"; };
 		DAAB0B091F750B140029C0D0 /* XmlClean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlClean.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				DADFB3641F759F9500DF3A47 /* TestBuilding.swift */,
 				DA99F8901F7701FE00ED1246 /* TestParsingArrays.swift */,
 				DA16D1591F8026200014E191 /* TestDeclaration.swift */,
+				DAA631971F802D3D009A8FF1 /* TestNonStrings.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				DA392E591F74438400E40C4D /* TestLoading.swift in Sources */,
 				DA392E551F7442AA00E40C4D /* TestElements.swift in Sources */,
 				DADFB3651F759F9500DF3A47 /* TestBuilding.swift in Sources */,
+				DAA631981F802D3D009A8FF1 /* TestNonStrings.swift in Sources */,
 				DA16D15A1F8026200014E191 /* TestDeclaration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

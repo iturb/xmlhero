@@ -71,4 +71,56 @@ final class TestBuilding:XCTestCase
                 0)
         }
     }
+    
+    func testBuildingString()
+    {
+        let buildExpectation:XCTestExpectation = expectation(
+            description:"build xml")
+        
+        let bundle:Bundle = Bundle(for:TestElements.self)
+        var string:String?
+        
+        Xml.object(
+            fileName:kResourceName,
+            bundle:bundle)
+        { (xml:[String:Any]?, error:XmlError?) in
+            
+            guard
+                
+                let xml:[String:Any] = xml
+                
+            else
+            {
+                return
+            }
+            
+            Xml.string(object:xml)
+            { (xmlString:String?, error:XmlError?) in
+                
+                string = xmlString
+                buildExpectation.fulfill()
+            }
+        }
+        
+        waitForExpectations(timeout:kWaitExpectation)
+        { (error:Error?) in
+            
+            XCTAssertNotNil(
+                string,
+                "failed building xml")
+            
+            guard
+                
+                let xmlString:String = string
+                
+            else
+            {
+                return
+            }
+            
+            XCTAssertGreaterThan(
+                xmlString.count,
+                0)
+        }
+    }
 }

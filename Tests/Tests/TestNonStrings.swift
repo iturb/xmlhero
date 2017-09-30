@@ -35,29 +35,23 @@ final class TestNonStrings:XCTestCase
             description:"build xml")
         let object:Any = mockPrimitivesObject()
         
-        var data:Data?
+        var string:String?
         
-        Xml.data(object:object)
-        { (xmlData:Data?, error:XmlError?) in
-            
-            data = xmlData
-            buildExpectation.fulfill()
+        Xml.string(object:object)
+        { (xmlString:String?, error:XmlError?) in
+            string = xmlString
         }
         
         waitForExpectations(timeout:kWaitExpectation)
         { (error:Error?) in
             
             XCTAssertNotNil(
-                data,
+                string,
                 "failed building xml")
             
             guard
                 
-                let data:Data = data,
-                let string:String = String(
-                    data:data,
-                    encoding:String.Encoding.utf8)
-                
+                let string:String = string
             else
             {
                 return

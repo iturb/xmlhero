@@ -7,6 +7,11 @@ extension XmlBuilder
     
     //MARK: internal
     
+    class func factoryHeader() -> String
+    {
+        return kDeclaration
+    }
+    
     class func mergeAttributes(
         name:String,
         attributes:[String:String]?) -> String
@@ -44,11 +49,6 @@ extension XmlBuilder
         }
         
         return string
-    }
-    
-    class func factoryHeader() -> String
-    {
-        return kDeclaration
     }
     
     class func factoryChildren(

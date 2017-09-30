@@ -9,25 +9,50 @@ final class XmlBuilder
         object:Any)
     {
         self.xml = xml
-        let string:String? = deserialize(object:object)
+        
+        guard
+            
+            let string:String = deserialize(object:object)
+        
+        else
+        {
+            failed()
+            
+            return
+        }
+        
         deserialized(string:string)
     }
     
     //MARK: private
     
-    private func deserialized(string:String?)
+    private func failed()
     {
+        let error:XmlError = XmlError.failedDeserializing()
+        xml?.buildingError(error:error)
+    }
+    
+    private func addHeader(string:String) -> String
+    {
+        var headered:String = XmlBuilder.factoryHeader()
+        headered.append(string)
+        
+        return headered
+    }
+    
+    private func deserialized(string:String)
+    {
+        let headered:String = addHeader(string:string)
+        
         guard
         
-            let string:String = string,
-            let data:Data = string.data(
+            let data:Data = headered.data(
                 using:String.Encoding.utf8,
                 allowLossyConversion:false)
         
         else
         {
-            let error:XmlError = XmlError.failedDeserializing()
-            xml?.buildingError(error:error)
+            failed()
             
             return
         }

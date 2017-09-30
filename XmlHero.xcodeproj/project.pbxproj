@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DA16D15A1F8026200014E191 /* TestDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16D1591F8026200014E191 /* TestDeclaration.swift */; };
+		DA16D15F1F8029E10014E191 /* XmlBuilderDeserializeDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16D15B1F8029090014E191 /* XmlBuilderDeserializeDictionary.swift */; };
+		DA16D1601F8029E50014E191 /* XmlBuilderDeserializeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16D15D1F8029140014E191 /* XmlBuilderDeserializeArray.swift */; };
 		DA2B32C31F73A539009386F0 /* XmlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B32C21F73A539009386F0 /* XmlError.swift */; };
 		DA2B32C51F73A584009386F0 /* XmlErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */; };
 		DA2B32C91F73A71B009386F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA2B32C71F73A71B009386F0 /* Localizable.strings */; };
@@ -22,6 +24,7 @@
 		DA7840451F73CAC100769F66 /* XmlParserSerialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */; };
 		DA99F88F1F76FE7B00ED1246 /* arrays.xml in Resources */ = {isa = PBXBuildFile; fileRef = DA99F88E1F76FE7B00ED1246 /* arrays.xml */; };
 		DA99F8911F7701FE00ED1246 /* TestParsingArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA99F8901F7701FE00ED1246 /* TestParsingArrays.swift */; };
+		DAA631941F802A54009A8FF1 /* XmlBuilderDeserializeTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA631931F802A54009A8FF1 /* XmlBuilderDeserializeTags.swift */; };
 		DAAB0B061F7503DE0029C0D0 /* data.unknown in Resources */ = {isa = PBXBuildFile; fileRef = DAAB0B051F7503DE0029C0D0 /* data.unknown */; };
 		DAAB0B081F7503F70029C0D0 /* TestDataUnknown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */; };
 		DAAB0B0B1F750B390029C0D0 /* XmlClean.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0B091F750B140029C0D0 /* XmlClean.swift */; };
@@ -54,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		DA16D1591F8026200014E191 /* TestDeclaration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDeclaration.swift; sourceTree = "<group>"; };
+		DA16D15B1F8029090014E191 /* XmlBuilderDeserializeDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilderDeserializeDictionary.swift; sourceTree = "<group>"; };
+		DA16D15D1F8029140014E191 /* XmlBuilderDeserializeArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilderDeserializeArray.swift; sourceTree = "<group>"; };
 		DA2B32C21F73A539009386F0 /* XmlError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlError.swift; sourceTree = "<group>"; };
 		DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlErrorFactory.swift; sourceTree = "<group>"; };
 		DA2B32C81F73A71B009386F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -72,6 +77,7 @@
 		DA7840441F73CAC100769F66 /* XmlParserSerialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserSerialize.swift; sourceTree = "<group>"; };
 		DA99F88E1F76FE7B00ED1246 /* arrays.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = arrays.xml; sourceTree = "<group>"; };
 		DA99F8901F7701FE00ED1246 /* TestParsingArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestParsingArrays.swift; sourceTree = "<group>"; };
+		DAA631931F802A54009A8FF1 /* XmlBuilderDeserializeTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlBuilderDeserializeTags.swift; sourceTree = "<group>"; };
 		DAAB0B051F7503DE0029C0D0 /* data.unknown */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.unknown; sourceTree = "<group>"; };
 		DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataUnknown.swift; sourceTree = "<group>"; };
 		DAAB0B091F750B140029C0D0 /* XmlClean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlClean.swift; sourceTree = "<group>"; };
@@ -200,6 +206,9 @@
 				DADFB35C1F757A0800DF3A47 /* XmlBuilder.swift */,
 				DADFB3601F75813000DF3A47 /* XmlBuilderFactory.swift */,
 				DADFB3621F75945900DF3A47 /* XmlBuilderDeserialize.swift */,
+				DAA631931F802A54009A8FF1 /* XmlBuilderDeserializeTags.swift */,
+				DA16D15B1F8029090014E191 /* XmlBuilderDeserializeDictionary.swift */,
+				DA16D15D1F8029140014E191 /* XmlBuilderDeserializeArray.swift */,
 				DA2B32C21F73A539009386F0 /* XmlError.swift */,
 				DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */,
 				DA7840421F73BE2F00769F66 /* XmlElement.swift */,
@@ -359,13 +368,16 @@
 			files = (
 				DA7840411F73BBA000769F66 /* XmlParserDelegate.swift in Sources */,
 				DA2B32C31F73A539009386F0 /* XmlError.swift in Sources */,
+				DAA631941F802A54009A8FF1 /* XmlBuilderDeserializeTags.swift in Sources */,
 				DADFB3611F75813000DF3A47 /* XmlBuilderFactory.swift in Sources */,
 				DAF9761D1F739A7B004AF525 /* XmlParser.swift in Sources */,
+				DA16D1601F8029E50014E191 /* XmlBuilderDeserializeArray.swift in Sources */,
 				DAAB0B0B1F750B390029C0D0 /* XmlClean.swift in Sources */,
 				DADFB35D1F757A0800DF3A47 /* XmlBuilder.swift in Sources */,
 				DA7840431F73BE2F00769F66 /* XmlElement.swift in Sources */,
 				DADFB3631F75945900DF3A47 /* XmlBuilderDeserialize.swift in Sources */,
 				DAE2E4F71F756B88008833EC /* XmlFactoryObject.swift in Sources */,
+				DA16D15F1F8029E10014E191 /* XmlBuilderDeserializeDictionary.swift in Sources */,
 				DAF9760F1F7350BC004AF525 /* AppDelegate.swift in Sources */,
 				DAF9761B1F739A39004AF525 /* Xml.swift in Sources */,
 				DA2B32C51F73A584009386F0 /* XmlErrorFactory.swift in Sources */,

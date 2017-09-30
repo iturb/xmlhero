@@ -63,4 +63,17 @@ extension XmlBuilder
         
         return string
     }
+    
+    func deserialize(
+        openTag:String,
+        closeTag:String,
+        value:String) -> String
+    {
+        var string:String = String()
+        string.append(openTag)
+        string.append(value)
+        string.append(closeTag)
+        
+        return string
+    }
 }

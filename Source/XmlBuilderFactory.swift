@@ -69,12 +69,13 @@ extension XmlBuilder
                 continue
             }
             
-            let string:String? = object as? String
+            let string:String? = anyToString(
+                value:object)
             
             guard
-            
+                
                 string == nil
-            
+                
             else
             {
                 continue
@@ -98,7 +99,8 @@ extension XmlBuilder
                 
                 key != Xml.kTextKey,
                 let object:Any = dictionary[key],
-                let string:String = object as? String
+                let string:String = anyToString(
+                    value:object)
                 
             else
             {

@@ -4,7 +4,7 @@ extension XmlBuilder
 {
     //MARK: private
     
-    private func valueToString(value:Any) -> String
+    private class func valueToString(value:Any) -> String
     {
         guard
         
@@ -22,11 +22,33 @@ extension XmlBuilder
     
     //MARK: internal
     
+    class func anyToString(value:Any) -> String?
+    {
+        let nullValue:NSNull? = value as? NSNull
+        let dictValue:[String:Any]? = value as? [String:Any]
+        let arrayValue:[Any]? = value as? [Any]
+        
+        guard
+        
+            nullValue == nil,
+            dictValue == nil,
+            arrayValue == nil
+        
+        else
+        {
+            return nil
+        }
+        
+        let string:String = valueToString(value:value)
+        
+        return string
+    }
+    
     func deserialize(
         name:String,
         value:Any) -> String
     {
-        let stringValue:String = valueToString(
+        let stringValue:String = XmlBuilder.valueToString(
             value:value)
         let openTag:String = XmlBuilder.factoryOpenTag(
             name:name,

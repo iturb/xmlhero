@@ -5,6 +5,7 @@ final class TestNonStrings:XCTestCase
 {
     private let kWaitExpectation:TimeInterval = 1
     private let kKeyParent:String = "parent"
+    private let kKeyChilds:String = "childs"
     private let kKeyA:String = "childA"
     private let kKeyB:String = "childB"
     private let kKeyC:String = "childC"
@@ -18,9 +19,10 @@ final class TestNonStrings:XCTestCase
     {
         let object:Any = [
             kKeyParent:[
-                kKeyA:kPrimitiveA,
-                kKeyB:kPrimitiveB,
-                kKeyC:kPrimitiveC]]
+                kKeyChilds:[
+                    kKeyA:kPrimitiveA,
+                    kKeyB:kPrimitiveB,
+                    kKeyC:kPrimitiveC]]]
         
         return object
     }
@@ -36,6 +38,10 @@ final class TestNonStrings:XCTestCase
         XCTAssertTrue(
             string.contains(kKeyParent),
             "Parent not in string")
+        
+        XCTAssertTrue(
+            string.contains(kKeyChilds),
+            "Childs not in string")
         
         XCTAssertTrue(
             string.contains(kKeyA),

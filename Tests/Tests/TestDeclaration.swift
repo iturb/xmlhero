@@ -4,6 +4,39 @@ import XCTest
 final class TestDeclaration:XCTestCase
 {
     private let kWaitExpectation:TimeInterval = 1
+    private let kDeclaration:String = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"
+    private let kMockObject:Any = [
+        "parent":[
+            "child":"1"]]
+    
+    //MARK: private
+    
+    private func validateDeclaration(data:Data)
+    {
+        let string:String? = String(
+            data:data,
+            encoding:String.Encoding.utf8)
+        
+        XCTAssertNotNil(
+            string,
+            "failed creating string")
+        
+        guard
+            
+            let nonOptionalString:String = string
+        
+        else
+        {
+            return
+        }
+        
+        let containsDeclaration:Bool = nonOptionalString.contains(
+            kDeclaration)
+        
+        XCTAssertTrue(
+            containsDeclaration,
+            "failed to add declaration")
+    }
     
     //MARK: tests
     
@@ -12,62 +45,32 @@ final class TestDeclaration:XCTestCase
         let buildExpectation:XCTestExpectation = expectation(
             description:"build xml")
         
-        let bundle:Bundle = Bundle(for:TestElements.self)
-        var string:String?
+        var data:Data?
         
-        Xml.object(
-            fileName:kResourceName,
-            bundle:bundle)
-        { (xml:[String:Any]?, error:XmlError?) in
+        Xml.data(object:kMockObject)
+        { (xmlData:Data?, error:XmlError?) in
             
-            guard
-                
-                let xml:[String:Any] = xml
-                
-                else
-            {
-                return
-            }
-            
-            Xml.data(object:xml)
-            { (data:Data?, error:XmlError?) in
-                
-                guard
-                    
-                    let data:Data = data,
-                    let dataString:String = String(
-                        data:data,
-                        encoding:String.Encoding.utf8)
-                    
-                    else
-                {
-                    return
-                }
-                
-                string = dataString
-                buildExpectation.fulfill()
-            }
+            data = xmlData
+            buildExpectation.fulfill()
         }
         
         waitForExpectations(timeout:kWaitExpectation)
         { (error:Error?) in
             
             XCTAssertNotNil(
-                string,
+                data,
                 "failed building xml")
             
             guard
-                
-                let xmlString:String = string
-                
-                else
+            
+                let data:Data = data
+            
+            else
             {
                 return
             }
             
-            XCTAssertGreaterThan(
-                xmlString.count,
-                0)
+            self.validateDeclaration(data:data)
         }
     }
 }

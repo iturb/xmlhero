@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA16D1561F8025B00014E191 /* TestDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16D1551F8025B00014E191 /* TestDefinition.swift */; };
+		DA16D15A1F8026200014E191 /* TestDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16D1591F8026200014E191 /* TestDeclaration.swift */; };
 		DA2B32C31F73A539009386F0 /* XmlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B32C21F73A539009386F0 /* XmlError.swift */; };
 		DA2B32C51F73A584009386F0 /* XmlErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */; };
 		DA2B32C91F73A71B009386F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA2B32C71F73A71B009386F0 /* Localizable.strings */; };
@@ -53,7 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA16D1551F8025B00014E191 /* TestDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDefinition.swift; sourceTree = "<group>"; };
+		DA16D1591F8026200014E191 /* TestDeclaration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDeclaration.swift; sourceTree = "<group>"; };
 		DA2B32C21F73A539009386F0 /* XmlError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlError.swift; sourceTree = "<group>"; };
 		DA2B32C41F73A584009386F0 /* XmlErrorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlErrorFactory.swift; sourceTree = "<group>"; };
 		DA2B32C81F73A71B009386F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 				DAAB0B071F7503F70029C0D0 /* TestDataUnknown.swift */,
 				DADFB3641F759F9500DF3A47 /* TestBuilding.swift */,
 				DA99F8901F7701FE00ED1246 /* TestParsingArrays.swift */,
-				DA16D1551F8025B00014E191 /* TestDefinition.swift */,
+				DA16D1591F8026200014E191 /* TestDeclaration.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -348,8 +348,8 @@
 				DA99F8911F7701FE00ED1246 /* TestParsingArrays.swift in Sources */,
 				DA392E591F74438400E40C4D /* TestLoading.swift in Sources */,
 				DA392E551F7442AA00E40C4D /* TestElements.swift in Sources */,
-				DA16D1561F8025B00014E191 /* TestDefinition.swift in Sources */,
 				DADFB3651F759F9500DF3A47 /* TestBuilding.swift in Sources */,
+				DA16D15A1F8026200014E191 /* TestDeclaration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -422,7 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				INFOPLIST_FILE = Tests/Info.plist;
